@@ -15,6 +15,8 @@
       <itemPath>Kart_main.c</itemPath>
       <itemPath>PWM.c</itemPath>
       <itemPath>PWM.h</itemPath>
+      <itemPath>USARTmodl.c</itemPath>
+      <itemPath>USARTmodl.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

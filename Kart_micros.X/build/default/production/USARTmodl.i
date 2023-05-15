@@ -1,4 +1,4 @@
-# 1 "PWM.c"
+# 1 "USARTmodl.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,7 +6,7 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "PWM.c" 2
+# 1 "USARTmodl.c" 2
 
 
 
@@ -2632,51 +2632,181 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\\pic\\include\\xc.h" 2 3
-# 9 "PWM.c" 2
+# 9 "USARTmodl.c" 2
 
-# 1 "./PWM.h" 1
-# 11 "./PWM.h"
-int chn1, chn2;
-float periodo_ms;
-int chn;
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c90\\stdint.h" 1 3
+# 10 "USARTmodl.c" 2
 
-void PWM_init (int chn1,int chn2,float periodo_ms);
-void PWM_duty (int chn,float duty);
-# 10 "PWM.c" 2
-
-void PWM_init (int chn1,int chn2, float periodo_ms){
-
-    TRISCbits.TRISC1 = chn2;
-    TRISCbits.TRISC2 = chn1;
-
-    PR2 = periodo_ms;
-    CCP1CONbits.P1M =0;
-    CCP1CONbits.CCP1M =0b1100;
-
-    CCPR1L = 0x0f;
-    CCP1CONbits.DC1B= 0;
-
-    PIR1bits.TMR2IF =0;
-    T2CONbits.T2CKPS = 0b11;
-    T2CONbits.TMR2ON = 1;
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c90\\stdio.h" 1 3
 
 
-    CCP2CONbits.CCP2M = 0b1100;
-    CCPR2L = 0x0f;
-    CCP2CONbits.DC2B0 = 0;
-    CCP2CONbits.DC2B1 = 0;
+
+# 1 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\\pic\\include\\__size_t.h" 1 3
 
 
-    while (PIR1bits.TMR2IF == 0);
-    PIR1bits.TMR2IF = 0;
-# 45 "PWM.c"
-                                                      }
-  void PWM_duty (int chn, float duty) {
-      if (chn==0)
-          CCPR1L = (ADRESH>>1)+128;
 
-      else
-          CCPR2L = (ADRESH>>1)+128;
+typedef unsigned size_t;
+# 4 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c90\\stdio.h" 2 3
+
+# 1 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\\pic\\include\\__null.h" 1 3
+# 5 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c90\\stdio.h" 2 3
 
 
+
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c90\\stdarg.h" 1 3
+
+
+
+
+
+
+typedef void * va_list[1];
+
+#pragma intrinsic(__va_start)
+extern void * __va_start(void);
+
+#pragma intrinsic(__va_arg)
+extern void * __va_arg(void *, ...);
+# 11 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c90\\stdio.h" 2 3
+# 43 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c90\\stdio.h" 3
+struct __prbuf
+{
+ char * ptr;
+ void (* func)(char);
+};
+# 85 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c90\\stdio.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c90\\conio.h" 1 3
+
+
+
+
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c90\\errno.h" 1 3
+# 29 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c90\\errno.h" 3
+extern int errno;
+# 8 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c90\\conio.h" 2 3
+
+
+
+
+extern void init_uart(void);
+
+extern char getch(void);
+extern char getche(void);
+extern void putch(char);
+extern void ungetch(char);
+
+extern __bit kbhit(void);
+
+
+
+extern char * cgets(char *);
+extern void cputs(const char *);
+# 85 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c90\\stdio.h" 2 3
+
+
+
+extern int cprintf(char *, ...);
+#pragma printf_check(cprintf)
+
+
+
+extern int _doprnt(struct __prbuf *, const register char *, register va_list);
+# 180 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c90\\stdio.h" 3
+#pragma printf_check(vprintf) const
+#pragma printf_check(vsprintf) const
+
+extern char * gets(char *);
+extern int puts(const char *);
+extern int scanf(const char *, ...) __attribute__((unsupported("scanf() is not supported by this compiler")));
+extern int sscanf(const char *, const char *, ...) __attribute__((unsupported("sscanf() is not supported by this compiler")));
+extern int vprintf(const char *, va_list) __attribute__((unsupported("vprintf() is not supported by this compiler")));
+extern int vsprintf(char *, const char *, va_list) __attribute__((unsupported("vsprintf() is not supported by this compiler")));
+extern int vscanf(const char *, va_list ap) __attribute__((unsupported("vscanf() is not supported by this compiler")));
+extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
+
+#pragma printf_check(printf) const
+#pragma printf_check(sprintf) const
+extern int sprintf(char *, const char *, ...);
+extern int printf(const char *, ...);
+# 11 "USARTmodl.c" 2
+
+# 1 "./USARTmodl.h" 1
+# 11 "./USARTmodl.h"
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c90\\stdint.h" 1 3
+# 11 "./USARTmodl.h" 2
+
+
+
+const char message[] = "2.Enviar Ascii" ;
+void UART_Init(const uint32_t baud_rate);
+__bit UART_Data_Ready();
+uint8_t UART_GetC();
+void UART_PutC(const char data);
+void UART_Print(const char *data);
+void UART_maininit ();
+# 12 "USARTmodl.c" 2
+
+
+void UART_Init(const uint32_t baud_rate)
+{
+  int16_t n = ( 8000000 / (16 * baud_rate) ) - 1;
+
+  if (n < 0)
+    n = 0;
+
+  if (n > 255)
+  {
+    n = ( 8000000 / (64 * baud_rate) ) - 1;
+    if (n > 255)
+      n = 255;
+    SPBRG = n;
+    TXSTA = 0x20;
   }
+
+  else
+  {
+    SPBRG = n;
+    TXSTA = 0x24;
+  }
+
+  RCSTA = 0x90;
+
+}
+
+
+__bit UART_Data_Ready()
+{
+  return RCIF;
+}
+
+uint8_t UART_GetC()
+{
+  while (RCIF == 0) ;
+  if (OERR)
+  {
+    CREN = 0;
+    CREN = 1;
+  }
+  return RCREG;
+}
+
+
+
+void UART_PutC(const char data)
+{
+  while (TRMT == 0);
+  TXREG = data;
+}
+
+void UART_Print(const char *data)
+{
+  uint8_t i = 0;
+  while (data[i] != '\0')
+    UART_PutC (data[i++]);
+}

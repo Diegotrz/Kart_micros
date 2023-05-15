@@ -32,6 +32,7 @@
 #include <stdint.h>
 #include "PWM.h"
 #include <pic16f887.h>
+#include "USARTmodl.h"
 #define _XTAL_FREQ 4000000
 /*
  *Constantes
@@ -41,11 +42,43 @@ float val;
 /*
  *Variables
  */
-
+unsigned int valadr,valpot;
 /*
  * Prototipos de funciones
  */
 void setup(void);
+void preguntas (void);
+unsigned char readEEPROM(unsigned char  address)
+{
+   
+  EEADR = address; //Address to be read
+  EECON1bits.EEPGD = 0;//Selecting EEPROM Data Memory
+  EECON1bits.RD = 1; //Initialise read cycle
+  return EEDATA; //Returning data
+}
+
+void writeEEPROM(unsigned char  address, unsigned char  dataEE)
+{ 
+  unsigned char INTCON_SAVE;//To save INTCON register value
+  EEADR = address; //Address to write
+  EEDATA = dataEE; //Data to write
+  EECON1bits.EEPGD = 0; //Selecting EEPROM Data Memory
+  EECON1bits.WREN = 1; //Enable writing of EEPROM
+  INTCON_SAVE=INTCON;//Backup INCON interupt register
+  INTCON=0; //Diables the interrupt
+  EECON2=0x55; //Required sequence for write to internal EEPROM
+  EECON2=0xAA; //Required sequence for write to internal EEPROM
+  EECON1bits.WR = 1; //Initialise write cycle
+  INTCON = INTCON_SAVE;//Enables Interrupt
+  EECON1bits.WREN = 0; //To disable write
+  while(PIR2bits.EEIF == 0)//Checking for complition of write operation
+  {
+    NOP(); //do nothing
+  }
+  PIR2bits.EEIF = 0; //Clearing EEIF bit
+}
+
+
 /*
  *Interrupción
  */
@@ -60,30 +93,83 @@ void __interrupt() isr (void)
         }
         else if (ADCON0bits.CHS ==0){
             PWM_duty(1 ,ADRESH);
-             
+             valpot = ADRESH;
         }
       else if (ADCON0bits.CHS == 2)
             val = ADRESH;
             PIR1bits.ADIF =0;
-         
-  
        
     }
-     
-   
- 
-   
+   if (INTCONbits.RBIF ){
+       
+        //INTCONbits.RBIF = 0;
+        /*
+        if (!PORTBbits.RB0){
+            while (!RB0);
+            SLEEP();
+        }
+         **/
+        if (!PORTBbits.RB1){
+            while (!RB1);
+                PORTE ++;   
         
+            
+                         
+        }
+    if (!PORTBbits.RB2){
+            while (!RB2){
+                //valadr = 10;
+                writeEEPROM(valadr, valpot);
+                PORTD = readEEPROM(valadr);
+                
+                         }
+        }
+    
+    }
+   
 }
+//------------------------------------------Funcion para lectura del UART----------------
+ char uart_read(){
+ if(PIR1bits.RCIF== 0){
+     if (RCSTAbits.OERR){
+         RCSTAbits.CREN =0;
+         NOP();
+         RCSTAbits.CREN =1;
+ }
+     return RCREG;
+ }
+ else
+     return 0;
+ }
+//-----------------------------------------------------------------------------------------------------------------------------------------
+
+
 /*
  *---------------Main-------------
  */
 void main (void)
 {
     setup();
+    OSCCON = 0x70;    // set internal oscillator to 8MHz
      PWM_init (0,0,255);
     ADCON0bits.GO =1;
+    UART_Init(9600);  // initialize UART module with 9600 baud
+ 
+  __delay_ms(2000);  // wait 2 seconds
+ 
+  UART_Print("1.Leer potenciometro\r\n");  // UART print
+ 
+  __delay_ms(1000);  // wait 1 second
+ 
+  UART_Print(message);  // UART print message
+ 
+  __delay_ms(1000);  // wait 1 second
+ 
+  UART_Print("\r\n");  // start new line
+ ADCON0bits.GO =1;
+ char text[9];
     i=0;
+    
     while(1)
     {
       
@@ -96,6 +182,43 @@ void main (void)
    
             
        }
+       
+       //--------------------------------------------------------------------
+        switch (uart_read()){
+          case '1': 
+             
+              
+               UART_Print ("\r\n");
+            sprintf(text, "%03u\r\n", 10);
+            UART_Print(text);
+   
+  
+              preguntas();
+             RCREG ='0';
+             
+             break;
+           case '2': 
+               __delay_us(9200000);
+               UART_Print ("\r\n");
+               UART_Print(uart_read());
+               UART_Print ("\r\n");
+               preguntas();
+               RCREG ='0';
+               
+               break;
+          
+      }
+      //Enviar datos al terminal
+    if ( UART_Data_Ready() )  // if a character available
+    {
+      uint8_t c = UART_GetC();  // read from UART and store in 'c'
+      UART_PutC(c);  // send 'c' via UART (return the received character back)
+    }
+       
+       
+       
+       
+       
     }
 }
     
@@ -109,7 +232,14 @@ void setup(void){
     ANSELH = 0;
     
     TRISA = 0xFF;
-  
+    TRISB = 0b11111111;
+    TRISD = 0;
+    OPTION_REGbits.nRBPU =  0;
+    WPUB = 0b1111;
+    PORTB = 0;
+    PORTC = 0;
+    PORTD = 0;
+    PORTE = 0;
    
    
     
@@ -129,9 +259,18 @@ void setup(void){
     __delay_us(50);
     
     //Configuración de las interrupciones
-            
+    //Configuración para la interrupción del ADC      
     PIR1bits.ADIF = 0;
     PIE1bits.ADIE = 1;
+    //Configuración para la interrupción de los botones
+    INTCONbits.RBIE = 0;
+    INTCONbits.RBIF = 1;
+    //Configuración para las interrupciones globales
     INTCONbits.PEIE = 1;
     INTCONbits.GIE = 1;
+}
+void preguntas(void)
+{
+    UART_Print ("1.Leer potenciometro\r\n");
+    UART_Print (message);
 }
