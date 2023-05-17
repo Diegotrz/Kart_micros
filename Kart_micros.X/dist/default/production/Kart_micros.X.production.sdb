@@ -7,6 +7,10 @@
 [v ___lldiv __lldiv `(ul  1 e 4 0 ]
 "505 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
 "43 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
 [v ___fltol __fltol `(l  1 e 4 0 ]
 "8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\isdigit.c
@@ -27,25 +31,29 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"51 C:\Users\diego\Videos\Kart_p_micros\Kartmicros2\Kart_micros\Kart_micros.X\Kart_main.c
+"52 C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
 [v _readEEPROM readEEPROM `(uc  1 e 1 0 ]
-"60
+"61
 [v _writeEEPROM writeEEPROM `(v  1 e 1 0 ]
-"85
+"86
 [v _isr isr `II(v  1 e 1 0 ]
-"132
+"133
 [v _uart_read uart_read `(uc  1 e 1 0 ]
-"150
+"151
 [v _main main `(v  1 e 1 0 ]
-"230
+"231
 [v _setup setup `(v  1 e 1 0 ]
-"272
+"273
 [v _preguntas preguntas `(v  1 e 1 0 ]
-"11 C:\Users\diego\Videos\Kart_p_micros\Kartmicros2\Kart_micros\Kart_micros.X\PWM.c
+"11 C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
 [v _PWM_init PWM_init `(v  1 e 1 0 ]
 "46
 [v _PWM_duty PWM_duty `(v  1 e 1 0 ]
-"14 C:\Users\diego\Videos\Kart_p_micros\Kartmicros2\Kart_micros\Kart_micros.X\USARTmodl.c
+"12 C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWmanual.c
+[v _PWmanual_init PWmanual_init `(v  1 e 1 0 ]
+"17
+[v _PWmanual_func PWmanual_func `(v  1 e 1 0 ]
+"14 C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
 [v _UART_Init UART_Init `(v  1 e 1 0 ]
 "41
 [v _UART_Data_Ready UART_Data_Ready `(b  1 e 0 0 ]
@@ -55,9 +63,11 @@
 [v _UART_PutC UART_PutC `(v  1 e 1 0 ]
 "65
 [v _UART_Print UART_Print `(v  1 e 1 0 ]
-"14 C:\Users\diego\Videos\Kart_p_micros\Kartmicros2\Kart_micros\Kart_micros.X/USARTmodl.h
+"14 C:\Users\Diego\Videos\Kart_micros\Kart_micros.X/USARTmodl.h
 [v _message message `DC[15]uc  1 e 15 0 ]
-"229 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
+"358 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+[v _dpowers dpowers `DC[5]ui  1 s 10 dpowers ]
+"229 D:/Mpxlab/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
 [v _PORTB PORTB `VEuc  1 e 1 @6 ]
 [s S172 . 1 `uc 1 RB0 1 0 :1:0 
 `uc 1 RB1 1 0 :1:1 
@@ -119,12 +129,12 @@
 "611
 [u S56 . 1 `S47 1 . 1 0 ]
 [v _PIR2bits PIR2bits `VES56  1 e 1 @13 ]
-[s S581 . 1 `uc 1 T2CKPS 1 0 :2:0 
+[s S615 . 1 `uc 1 T2CKPS 1 0 :2:0 
 `uc 1 TMR2ON 1 0 :1:2 
 `uc 1 TOUTPS 1 0 :4:3 
 ]
 "794
-[s S585 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+[s S619 . 1 `uc 1 T2CKPS0 1 0 :1:0 
 `uc 1 T2CKPS1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 TOUTPS0 1 0 :1:3 
@@ -132,16 +142,16 @@
 `uc 1 TOUTPS2 1 0 :1:5 
 `uc 1 TOUTPS3 1 0 :1:6 
 ]
-[u S593 . 1 `S581 1 . 1 0 `S585 1 . 1 0 ]
-[v _T2CONbits T2CONbits `VES593  1 e 1 @18 ]
+[u S627 . 1 `S615 1 . 1 0 `S619 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES627  1 e 1 @18 ]
 "928
 [v _CCPR1L CCPR1L `VEuc  1 e 1 @21 ]
-[s S530 . 1 `uc 1 CCP1M 1 0 :4:0 
+[s S564 . 1 `uc 1 CCP1M 1 0 :4:0 
 `uc 1 DC1B 1 0 :2:4 
 `uc 1 P1M 1 0 :2:6 
 ]
 "969
-[s S534 . 1 `uc 1 CCP1M0 1 0 :1:0 
+[s S568 . 1 `uc 1 CCP1M0 1 0 :1:0 
 `uc 1 CCP1M1 1 0 :1:1 
 `uc 1 CCP1M2 1 0 :1:2 
 `uc 1 CCP1M3 1 0 :1:3 
@@ -150,15 +160,15 @@
 `uc 1 P1M0 1 0 :1:6 
 `uc 1 P1M1 1 0 :1:7 
 ]
-[s S543 . 1 `uc 1 . 1 0 :4:0 
+[s S577 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 CCP1Y 1 0 :1:4 
 `uc 1 CCP1X 1 0 :1:5 
 ]
-[u S547 . 1 `S530 1 . 1 0 `S534 1 . 1 0 `S543 1 . 1 0 ]
-[v _CCP1CONbits CCP1CONbits `VES547  1 e 1 @23 ]
+[u S581 . 1 `S564 1 . 1 0 `S568 1 . 1 0 `S577 1 . 1 0 ]
+[v _CCP1CONbits CCP1CONbits `VES581  1 e 1 @23 ]
 "1039
 [v _RCSTA RCSTA `VEuc  1 e 1 @24 ]
-[s S197 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S202 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -168,38 +178,38 @@
 `uc 1 SPEN 1 0 :1:7 
 ]
 "1069
-[s S206 . 1 `uc 1 RCD8 1 0 :1:0 
+[s S211 . 1 `uc 1 RCD8 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 RC9 1 0 :1:6 
 ]
-[s S210 . 1 `uc 1 . 1 0 :6:0 
+[s S215 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 nRC8 1 0 :1:6 
 ]
-[s S213 . 1 `uc 1 . 1 0 :6:0 
+[s S218 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 RC8_9 1 0 :1:6 
 ]
-[u S216 . 1 `S197 1 . 1 0 `S206 1 . 1 0 `S210 1 . 1 0 `S213 1 . 1 0 ]
-[v _RCSTAbits RCSTAbits `VES216  1 e 1 @24 ]
+[u S221 . 1 `S202 1 . 1 0 `S211 1 . 1 0 `S215 1 . 1 0 `S218 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES221  1 e 1 @24 ]
 "1134
 [v _TXREG TXREG `VEuc  1 e 1 @25 ]
 "1141
 [v _RCREG RCREG `VEuc  1 e 1 @26 ]
 "1155
 [v _CCPR2L CCPR2L `VEuc  1 e 1 @27 ]
-[s S609 . 1 `uc 1 CCP2M 1 0 :4:0 
+[s S643 . 1 `uc 1 CCP2M 1 0 :4:0 
 `uc 1 DC2B0 1 0 :1:4 
 `uc 1 DC2B1 1 0 :1:5 
 ]
 "1189
-[s S613 . 1 `uc 1 CCP2M0 1 0 :1:0 
+[s S647 . 1 `uc 1 CCP2M0 1 0 :1:0 
 `uc 1 CCP2M1 1 0 :1:1 
 `uc 1 CCP2M2 1 0 :1:2 
 `uc 1 CCP2M3 1 0 :1:3 
 `uc 1 CCP2Y 1 0 :1:4 
 `uc 1 CCP2X 1 0 :1:5 
 ]
-[u S620 . 1 `S609 1 . 1 0 `S613 1 . 1 0 ]
-[v _CCP2CONbits CCP2CONbits `VES620  1 e 1 @29 ]
+[u S654 . 1 `S643 1 . 1 0 `S647 1 . 1 0 ]
+[v _CCP2CONbits CCP2CONbits `VES654  1 e 1 @29 ]
 "1239
 [v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
 [s S87 . 1 `uc 1 ADON 1 0 :1:0 
@@ -225,7 +235,7 @@
 ]
 [u S107 . 1 `S87 1 . 1 0 `S92 1 . 1 0 `S101 1 . 1 0 `S104 1 . 1 0 ]
 [v _ADCON0bits ADCON0bits `VES107  1 e 1 @31 ]
-[s S298 . 1 `uc 1 PS 1 0 :3:0 
+[s S330 . 1 `uc 1 PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
@@ -233,17 +243,17 @@
 `uc 1 nRBPU 1 0 :1:7 
 ]
 "1367
-[s S305 . 1 `uc 1 PS0 1 0 :1:0 
+[s S337 . 1 `uc 1 PS0 1 0 :1:0 
 `uc 1 PS1 1 0 :1:1 
 `uc 1 PS2 1 0 :1:2 
 ]
-[u S309 . 1 `S298 1 . 1 0 `S305 1 . 1 0 ]
-[v _OPTION_REGbits OPTION_REGbits `VES309  1 e 1 @129 ]
+[u S341 . 1 `S330 1 . 1 0 `S337 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES341  1 e 1 @129 ]
 "1417
 [v _TRISA TRISA `VEuc  1 e 1 @133 ]
 "1479
 [v _TRISB TRISB `VEuc  1 e 1 @134 ]
-[s S508 . 1 `uc 1 TRISC0 1 0 :1:0 
+[s S270 . 1 `uc 1 TRISC0 1 0 :1:0 
 `uc 1 TRISC1 1 0 :1:1 
 `uc 1 TRISC2 1 0 :1:2 
 `uc 1 TRISC3 1 0 :1:3 
@@ -253,11 +263,11 @@
 `uc 1 TRISC7 1 0 :1:7 
 ]
 "1558
-[u S517 . 1 `S508 1 . 1 0 ]
-[v _TRISCbits TRISCbits `VES517  1 e 1 @135 ]
+[u S279 . 1 `S270 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES279  1 e 1 @135 ]
 "1603
 [v _TRISD TRISD `VEuc  1 e 1 @136 ]
-[s S368 . 1 `uc 1 TMR1IE 1 0 :1:0 
+[s S400 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 CCP1IE 1 0 :1:2 
 `uc 1 SSPIE 1 0 :1:3 
@@ -266,24 +276,24 @@
 `uc 1 ADIE 1 0 :1:6 
 ]
 "1719
-[u S376 . 1 `S368 1 . 1 0 ]
-[v _PIE1bits PIE1bits `VES376  1 e 1 @140 ]
+[u S408 . 1 `S400 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES408  1 e 1 @140 ]
 "1863
 [v _OSCCON OSCCON `VEuc  1 e 1 @143 ]
-[s S327 . 1 `uc 1 SCS 1 0 :1:0 
+[s S359 . 1 `uc 1 SCS 1 0 :1:0 
 `uc 1 LTS 1 0 :1:1 
 `uc 1 HTS 1 0 :1:2 
 `uc 1 OSTS 1 0 :1:3 
 `uc 1 IRCF 1 0 :3:4 
 ]
 "1883
-[s S333 . 1 `uc 1 . 1 0 :4:0 
+[s S365 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 IRCF0 1 0 :1:4 
 `uc 1 IRCF1 1 0 :1:5 
 `uc 1 IRCF2 1 0 :1:6 
 ]
-[u S338 . 1 `S327 1 . 1 0 `S333 1 . 1 0 ]
-[v _OSCCONbits OSCCONbits `VES338  1 e 1 @143 ]
+[u S370 . 1 `S359 1 . 1 0 `S365 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES370  1 e 1 @143 ]
 "2042
 [v _PR2 PR2 `VEuc  1 e 1 @146 ]
 "2347
@@ -292,15 +302,15 @@
 [v _TXSTA TXSTA `VEuc  1 e 1 @152 ]
 "2643
 [v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
-[s S353 . 1 `uc 1 . 1 0 :4:0 
+[s S385 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 VCFG0 1 0 :1:4 
 `uc 1 VCFG1 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 ADFM 1 0 :1:7 
 ]
 "2992
-[u S359 . 1 `S353 1 . 1 0 ]
-[v _ADCON1bits ADCON1bits `VES359  1 e 1 @159 ]
+[u S391 . 1 `S385 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES391  1 e 1 @159 ]
 "3246
 [v _EEDATA EEDATA `VEuc  1 e 1 @268 ]
 "3258
@@ -325,58 +335,56 @@
 [v _CREN CREN `VEb  1 e 0 @196 ]
 "4006
 [v _OERR OERR `VEb  1 e 0 @193 ]
+"4108
+[v _RB0 RB0 `VEb  1 e 0 @48 ]
 "4111
 [v _RB1 RB1 `VEb  1 e 0 @49 ]
-"4114
-[v _RB2 RB2 `VEb  1 e 0 @50 ]
 "4180
 [v _RCIF RCIF `VEb  1 e 0 @101 ]
 "4513
 [v _TRMT TRMT `VEb  1 e 0 @1217 ]
-"358 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-[v _dpowers dpowers `DC[5]ui  1 s 10 dpowers ]
-"40 C:\Users\diego\Videos\Kart_p_micros\Kartmicros2\Kart_micros\Kart_micros.X\Kart_main.c
-[v _i i `i  1 e 2 0 ]
-"41
+"42 C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
 [v _val val `f  1 e 4 0 ]
-"45
+"46
 [v _valadr valadr `ui  1 e 2 0 ]
 [v _valpot valpot `ui  1 e 2 0 ]
-"150
+"11 C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWmanual.c
+[v _i i `i  1 e 2 0 ]
+"151 C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"214
-[v main@c c `uc  1 a 1 9 ]
-"170
-[v main@text text `[9]uc  1 a 9 0 ]
-"223
+"215
+[v main@c c `uc  1 a 1 32 ]
+"171
+[v main@text text `[9]uc  1 a 9 23 ]
+"224
 } 0
-"132
+"133
 [v _uart_read uart_read `(uc  1 e 1 0 ]
 {
-"143
+"144
 } 0
 "505 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
 {
 [v sprintf@sp sp `*.4uc  1 a 1 wreg ]
 "514
-[v sprintf@width width `i  1 a 2 39 ]
+[v sprintf@width width `i  1 a 2 17 ]
 "545
-[v sprintf@val val `ui  1 a 2 35 ]
+[v sprintf@val val `ui  1 a 2 13 ]
 "512
-[v sprintf@c c `uc  1 a 1 41 ]
+[v sprintf@c c `uc  1 a 1 19 ]
 "521
-[v sprintf@prec prec `c  1 a 1 37 ]
+[v sprintf@prec prec `c  1 a 1 15 ]
 "525
-[v sprintf@flag flag `uc  1 a 1 34 ]
+[v sprintf@flag flag `uc  1 a 1 12 ]
 "507
-[v sprintf@ap ap `[1]*.4v  1 a 1 33 ]
+[v sprintf@ap ap `[1]*.4v  1 a 1 11 ]
 "505
 [v sprintf@sp sp `*.4uc  1 a 1 wreg ]
-[v sprintf@f f `*.24DCuc  1 p 1 27 ]
+[v sprintf@f f `*.24DCuc  1 p 1 5 ]
 "550
-[v sprintf@sp sp `*.4uc  1 a 1 38 ]
+[v sprintf@sp sp `*.4uc  1 a 1 16 ]
 "1567
 } 0
 "8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\isdigit.c
@@ -385,58 +393,58 @@
 [v isdigit@c c `uc  1 a 1 wreg ]
 [v isdigit@c c `uc  1 a 1 wreg ]
 "14
-[v isdigit@c c `uc  1 a 1 14 ]
+[v isdigit@c c `uc  1 a 1 24 ]
 "15
 } 0
 "15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 {
 "17
-[v ___wmul@product product `ui  1 a 2 17 ]
+[v ___wmul@product product `ui  1 a 2 27 ]
 "15
-[v ___wmul@multiplier multiplier `ui  1 p 2 13 ]
-[v ___wmul@multiplicand multiplicand `ui  1 p 2 15 ]
+[v ___wmul@multiplier multiplier `ui  1 p 2 23 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 25 ]
 "53
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
 [v ___lwmod __lwmod `(ui  1 e 2 0 ]
 {
 "10
-[v ___lwmod@counter counter `uc  1 a 1 26 ]
+[v ___lwmod@counter counter `uc  1 a 1 4 ]
 "5
-[v ___lwmod@divisor divisor `ui  1 p 2 21 ]
-[v ___lwmod@dividend dividend `ui  1 p 2 23 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
 "25
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
 {
 "10
-[v ___lwdiv@quotient quotient `ui  1 a 2 19 ]
+[v ___lwdiv@quotient quotient `ui  1 a 2 29 ]
 "11
-[v ___lwdiv@counter counter `uc  1 a 1 18 ]
+[v ___lwdiv@counter counter `uc  1 a 1 28 ]
 "5
-[v ___lwdiv@divisor divisor `ui  1 p 2 13 ]
-[v ___lwdiv@dividend dividend `ui  1 p 2 15 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 23 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 25 ]
 "30
 } 0
-"230 C:\Users\diego\Videos\Kart_p_micros\Kartmicros2\Kart_micros\Kart_micros.X\Kart_main.c
+"231 C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
 [v _setup setup `(v  1 e 1 0 ]
 {
-"271
-} 0
 "272
+} 0
+"273
 [v _preguntas preguntas `(v  1 e 1 0 ]
 {
-"276
+"277
 } 0
-"65 C:\Users\diego\Videos\Kart_p_micros\Kartmicros2\Kart_micros\Kart_micros.X\USARTmodl.c
+"65 C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
 [v _UART_Print UART_Print `(v  1 e 1 0 ]
 {
 "67
-[v UART_Print@i i `uc  1 a 1 18 ]
+[v UART_Print@i i `uc  1 a 1 28 ]
 "65
-[v UART_Print@data data `*.26DCuc  1 p 2 14 ]
+[v UART_Print@data data `*.26DCuc  1 p 2 24 ]
 "70
 } 0
 "59
@@ -444,31 +452,31 @@
 {
 [v UART_PutC@data data `DCuc  1 a 1 wreg ]
 [v UART_PutC@data data `DCuc  1 a 1 wreg ]
-[v UART_PutC@data data `DCuc  1 a 1 13 ]
+[v UART_PutC@data data `DCuc  1 a 1 23 ]
 "63
 } 0
 "14
 [v _UART_Init UART_Init `(v  1 e 1 0 ]
 {
 "16
-[v UART_Init@n n `i  1 a 2 35 ]
+[v UART_Init@n n `i  1 a 2 13 ]
 "14
-[v UART_Init@baud_rate baud_rate `DCul  1 p 4 27 ]
+[v UART_Init@baud_rate baud_rate `DCul  1 p 4 5 ]
 "38
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
 [v ___lldiv __lldiv `(ul  1 e 4 0 ]
 {
 "10
-[v ___lldiv@quotient quotient `ul  1 a 4 22 ]
+[v ___lldiv@quotient quotient `ul  1 a 4 0 ]
 "11
-[v ___lldiv@counter counter `uc  1 a 1 26 ]
+[v ___lldiv@counter counter `uc  1 a 1 4 ]
 "5
-[v ___lldiv@divisor divisor `ul  1 p 4 13 ]
-[v ___lldiv@dividend dividend `ul  1 p 4 17 ]
+[v ___lldiv@divisor divisor `ul  1 p 4 23 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 27 ]
 "30
 } 0
-"46 C:\Users\diego\Videos\Kart_p_micros\Kartmicros2\Kart_micros\Kart_micros.X\USARTmodl.c
+"46 C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
 [v _UART_GetC UART_GetC `(uc  1 e 1 0 ]
 {
 "55
@@ -478,50 +486,62 @@
 {
 "44
 } 0
-"11 C:\Users\diego\Videos\Kart_p_micros\Kartmicros2\Kart_micros\Kart_micros.X\PWM.c
+"12 C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWmanual.c
+[v _PWmanual_init PWmanual_init `(v  1 e 1 0 ]
+{
+[v PWmanual_init@numport numport `i  1 p 2 23 ]
+"16
+} 0
+"11 C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
 [v _PWM_init PWM_init `(v  1 e 1 0 ]
 {
-[v PWM_init@chn1 chn1 `i  1 p 2 23 ]
-[v PWM_init@chn2 chn2 `i  1 p 2 25 ]
-[v PWM_init@periodo_ms periodo_ms `f  1 p 4 27 ]
+[v PWM_init@chn1 chn1 `i  1 p 2 2 ]
+[v PWM_init@chn2 chn2 `i  1 p 2 4 ]
+[v PWM_init@periodo_ms periodo_ms `f  1 p 4 6 ]
 "45
 } 0
 "43 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
 [v ___fltol __fltol `(l  1 e 4 0 ]
 {
 "45
-[v ___fltol@exp1 exp1 `uc  1 a 1 22 ]
-[v ___fltol@sign1 sign1 `uc  1 a 1 21 ]
+[v ___fltol@exp1 exp1 `uc  1 a 1 1 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 0 ]
 "43
-[v ___fltol@f1 f1 `d  1 p 4 13 ]
+[v ___fltol@f1 f1 `d  1 p 4 23 ]
 "70
 } 0
-"85 C:\Users\diego\Videos\Kart_p_micros\Kartmicros2\Kart_micros\Kart_micros.X\Kart_main.c
+"86 C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
 [v _isr isr `II(v  1 e 1 0 ]
 {
-"130
+"131
 } 0
-"60
+"61
 [v _writeEEPROM writeEEPROM `(v  1 e 1 0 ]
 {
 [v writeEEPROM@address address `uc  1 a 1 wreg ]
-"62
+"63
 [v writeEEPROM@INTCON_SAVE INTCON_SAVE `uc  1 a 1 2 ]
-"60
+"61
 [v writeEEPROM@address address `uc  1 a 1 wreg ]
 [v writeEEPROM@dataEE dataEE `uc  1 p 1 0 ]
-"63
+"64
 [v writeEEPROM@address address `uc  1 a 1 1 ]
-"79
+"80
 } 0
-"51
+"52
 [v _readEEPROM readEEPROM `(uc  1 e 1 0 ]
 {
 [v readEEPROM@address address `uc  1 a 1 wreg ]
 [v readEEPROM@address address `uc  1 a 1 wreg ]
-"54
+"55
 [v readEEPROM@address address `uc  1 a 1 0 ]
-"58
+"59
+} 0
+"17 C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWmanual.c
+[v _PWmanual_func PWmanual_func `(v  1 e 1 0 ]
+{
+[v PWmanual_func@valad valad `f  1 p 4 12 ]
+"29
 } 0
 "10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
@@ -538,7 +558,21 @@
 [v ___xxtofl@sign sign `uc  1 a 1 8 ]
 "44
 } 0
-"46 C:\Users\diego\Videos\Kart_p_micros\Kartmicros2\Kart_micros\Kart_micros.X\PWM.c
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+{
+[v ___flge@ff1 ff1 `d  1 p 4 0 ]
+[v ___flge@ff2 ff2 `d  1 p 4 4 ]
+"19
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+{
+[v ___fleq@ff1 ff1 `d  1 p 4 0 ]
+[v ___fleq@ff2 ff2 `d  1 p 4 4 ]
+"12
+} 0
+"46 C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
 [v _PWM_duty PWM_duty `(v  1 e 1 0 ]
 {
 [v PWM_duty@chn chn `i  1 p 2 0 ]

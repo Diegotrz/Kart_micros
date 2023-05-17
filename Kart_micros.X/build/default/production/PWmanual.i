@@ -1,4 +1,4 @@
-# 1 "PWM.c"
+# 1 "PWmanual.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,7 +6,7 @@
 # 1 "<built-in>" 2
 # 1 "D:/Mpxlab/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "PWM.c" 2
+# 1 "PWmanual.c" 2
 
 
 
@@ -2632,51 +2632,33 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "D:/Mpxlab/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\\pic\\include\\xc.h" 2 3
-# 9 "PWM.c" 2
+# 9 "PWmanual.c" 2
 
-# 1 "./PWM.h" 1
-# 11 "./PWM.h"
-int chn1, chn2;
-float periodo_ms;
-int chn;
+# 1 "./PWmanual.h" 1
+# 35 "./PWmanual.h"
+char portsl[];
+int numport;
+float valad;
+void PWmanual_init (char portsl, int numport);
+void PWmanual_func (float valad);
+# 10 "PWmanual.c" 2
 
-void PWM_init (int chn1,int chn2,float periodo_ms);
-void PWM_duty (int chn,float duty);
-# 10 "PWM.c" 2
+int i;
+void PWmanual_init (char portsl, int numport){
 
-void PWM_init (int chn1,int chn2, float periodo_ms){
+    TRISCbits.TRISC3 = numport;
 
-    TRISCbits.TRISC1 = chn2;
-    TRISCbits.TRISC2 = chn1;
+}
+void PWmanual_func (float valad){
+    if (PIR1bits.TMR2IF){
 
-    PR2 = periodo_ms;
-    CCP1CONbits.P1M =0;
-    CCP1CONbits.CCP1M =0b1100;
+        for (i=0;i<=valad;i++){
+            if (i== valad){
+            TRISCbits.TRISC3 ++;
 
-    CCPR1L = 0x0f;
-    CCP1CONbits.DC1B= 0;
+            }
+        }
+       PIR1bits.TMR2IF = 0;
+    }
 
-    PIR1bits.TMR2IF =0;
-    T2CONbits.T2CKPS = 0b11;
-    T2CONbits.TMR2ON = 1;
-
-
-    CCP2CONbits.CCP2M = 0b1100;
-    CCPR2L = 0x0f;
-    CCP2CONbits.DC2B0 = 0;
-    CCP2CONbits.DC2B1 = 0;
-
-
-    while (PIR1bits.TMR2IF == 0);
-    PIR1bits.TMR2IF = 0;
-# 45 "PWM.c"
-                                                      }
-  void PWM_duty (int chn, float duty) {
-      if (chn==0)
-          CCPR1L = (ADRESH>>1)+128;
-
-      else
-          CCPR2L = (ADRESH>>1)+128;
-
-
-  }
+}

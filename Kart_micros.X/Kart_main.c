@@ -19,8 +19,8 @@
 #pragma config CPD = OFF        // Data Code Protection bit (Data memory code protection is disabled)
 #pragma config BOREN = OFF      // Brown Out Reset Selection bits (BOR disabled)
 #pragma config IESO = OFF       // Internal External Switchover bit (Internal/External Switchover mode is disabled)
-#pragma config FCMEN = ON       // Fail-Safe Clock Monitor Enabled bit (Fail-Safe Clock Monitor is enabled)
-#pragma config LVP = ON         // Low Voltage Programming Enable bit (RB3/PGM pin has PGM function, low voltage programming enabled)
+#pragma config FCMEN = OFF      // Fail-Safe Clock Monitor Enabled bit (Fail-Safe Clock Monitor is enabled)
+#pragma config LVP = OFF        // Low Voltage Programming Enable bit (RB3/PGM pin has PGM function, low voltage programming enabled)
 
 // CONFIG2
 #pragma config BOR4V = BOR40V   // Brown-out Reset Selection bit (Brown-out Reset set to 4.0V)
@@ -33,6 +33,7 @@
 #include "PWM.h"
 #include <pic16f887.h>
 #include "USARTmodl.h"
+#include "PWmanual.h"
 #define _XTAL_FREQ 4000000
 /*
  *Constantes
@@ -109,15 +110,15 @@ void __interrupt() isr (void)
             SLEEP();
         }
          **/
-        if (!PORTBbits.RB1){
-            while (!RB1);
+        if (!PORTBbits.RB0){
+            while (!RB0);
                 PORTE ++;   
         
             
                          
         }
-    if (!PORTBbits.RB2){
-            while (!RB2){
+    if (!PORTBbits.RB1){
+            while (!RB1){
                 //valadr = 10;
                 writeEEPROM(valadr, valpot);
                 PORTD = readEEPROM(valadr);
@@ -126,7 +127,7 @@ void __interrupt() isr (void)
         }
     
     }
-   
+   PWmanual_func (val);
 }
 //------------------------------------------Funcion para lectura del UART----------------
  char uart_read(){
@@ -154,7 +155,7 @@ void main (void)
      PWM_init (0,0,255);
     ADCON0bits.GO =1;
     UART_Init(9600);  // initialize UART module with 9600 baud
- 
+    PWmanual_init (TRISCbits.TRISC4,0);
   __delay_ms(2000);  // wait 2 seconds
  
   UART_Print("1.Leer potenciometro\r\n");  // UART print

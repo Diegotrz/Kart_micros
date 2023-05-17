@@ -17,6 +17,8 @@
       <itemPath>PWM.h</itemPath>
       <itemPath>USARTmodl.c</itemPath>
       <itemPath>USARTmodl.h</itemPath>
+      <itemPath>PWmanual.c</itemPath>
+      <itemPath>PWmanual.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
