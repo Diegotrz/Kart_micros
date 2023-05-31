@@ -43,7 +43,8 @@ float val;
 /*
  *Variables
  */
-unsigned int valadr,valpot;
+unsigned int valadr,valpot0,valpot1,valprom;
+
 /*
  * Prototipos de funciones
  */
@@ -89,12 +90,12 @@ void __interrupt() isr (void)
         //Interrupción
        if (ADCON0bits.CHS ==1){
              PWM_duty(0,ADRESH);
-              
+              valpot0 = ADRESH;
       
         }
         else if (ADCON0bits.CHS ==0){
             PWM_duty(1 ,ADRESH);
-             valpot = ADRESH;
+             valpot1 = ADRESH;
         }
       else if (ADCON0bits.CHS == 2)
             val = ADRESH;
@@ -112,7 +113,7 @@ void __interrupt() isr (void)
          **/
         if (!PORTBbits.RB0){
             while (!RB0);
-                PORTE ++;   
+                writeEEPROM(50, valpot1);  
         
             
                          
@@ -120,14 +121,28 @@ void __interrupt() isr (void)
     if (!PORTBbits.RB1){
             while (!RB1){
                 //valadr = 10;
-                writeEEPROM(valadr, valpot);
-                PORTD = readEEPROM(valadr);
+           
+                valprom = readEEPROM(50);
+                PWM_duty(0,valprom);
                 
                          }
         }
     
     }
-   PWmanual_func (val);
+ PWmanual_func (val);
+  /* if (PIR1bits.TMR2IF){
+    //tmr0
+       
+        for (i=0;i<=valad;i++){
+            if (i== valad){
+          
+             PORTD= 01;
+             PORTD= 00;
+            }
+        }
+       PIR1bits.TMR2IF = 0; 
+    }
+   */
 }
 //------------------------------------------Funcion para lectura del UART----------------
  char uart_read(){
@@ -190,7 +205,7 @@ void main (void)
              
               
                UART_Print ("\r\n");
-            sprintf(text, "%03u\r\n", 10);
+            sprintf(text, "%03u\r\n", valprom);
             UART_Print(text);
    
   
@@ -234,11 +249,11 @@ void setup(void){
     
     TRISA = 0xFF;
     TRISB = 0b11111111;
-    TRISD = 0;
+ 
     OPTION_REGbits.nRBPU =  0;
     WPUB = 0b1111;
-    PORTB = 0;
-    PORTC = 0;
+    //PORTB = 0;
+    //PORTC = 0;
     PORTD = 0;
     PORTE = 0;
    

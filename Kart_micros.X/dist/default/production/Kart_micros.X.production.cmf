@@ -12,44 +12,44 @@
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
 $dist/default/production\Kart_micros.X.production.o
-cinit CODE 0 11 11 11 2 1
+cinit CODE 0 11 11 15 2 1
 idloc IDLOC 5 2000 2000 4 2 1
-text1 CODE 0 E17 E17 13 2 1
-text2 CODE 0 22 22 1A4 2 1
-text3 CODE 0 E2A E2A 14 2 1
-text4 CODE 0 E8B E8B 27 2 1
-text5 CODE 0 7BE 7BE 40 2 1
+text1 CODE 0 DDA DDA 13 2 1
+text2 CODE 0 26 26 1A4 2 1
+text3 CODE 0 DED DED 14 2 1
+text4 CODE 0 E4E E4E 27 2 1
+text5 CODE 0 EDF EDF 40 2 1
 text6 CODE 0 F1F F1F 46 2 1
-text7 CODE 0 EE7 EE7 38 2 1
-text8 CODE 0 E54 E54 17 2 1
-text9 CODE 0 EB2 EB2 35 2 1
-text10 CODE 0 E09 E09 E 2 1
-text11 CODE 0 3FB 3FB C4 2 1
-text12 CODE 0 734 734 8A 2 1
-text13 CODE 0 DFB DFB E 2 1
-text14 CODE 0 DE4 DE4 A 2 1
-text15 CODE 0 DDA DDA A 2 1
+text7 CODE 0 EAA EAA 35 2 1
+text8 CODE 0 E17 E17 17 2 1
+text9 CODE 0 E75 E75 35 2 1
+text10 CODE 0 7F2 7F2 E 2 1
+text11 CODE 0 42F 42F C4 2 1
+text12 CODE 0 768 768 8A 2 1
+text13 CODE 0 DCC DCC E 2 1
+text14 CODE 0 DB5 DB5 A 2 1
+text15 CODE 0 DAB DAB A 2 1
 text16 CODE 0 F65 F65 4B 2 1
-text17 CODE 0 61B 61B 8E 2 1
-text18 CODE 0 324 324 D7 2 1
-text19 CODE 0 E6B E6B 20 2 1
-text20 CODE 0 DEE DEE D 2 1
-text21 CODE 0 6A9 6A9 8B 2 1
-text22 CODE 0 4BF 4BF B8 2 1
-text23 CODE 0 577 577 A4 2 1
+text17 CODE 0 64F 64F 8E 2 1
+text18 CODE 0 330 330 FF 2 1
+text19 CODE 0 E2E E2E 20 2 1
+text20 CODE 0 DBF DBF D 2 1
+text21 CODE 0 6DD 6DD 8B 2 1
+text22 CODE 0 4F3 4F3 B8 2 1
+text23 CODE 0 5AB 5AB A4 2 1
 text24 CODE 0 FB0 FB0 50 2 1
-text25 CODE 0 E3E E3E 16 2 1
-maintext CODE 0 1C6 1C6 15E 2 1
+text25 CODE 0 E01 E01 16 2 1
+maintext CODE 0 1CA 1CA 166 2 1
 cstackCOMMON COMMON 1 70 70 E 1 1
 cstackBANK0 BANK0 1 20 20 20 1 1
 cstackBANK1 BANK1 1 A0 A0 21 1 1
 intentry CODE 0 4 4 A 2 1
 bssBANK0 BANK0 1 40 40 19 1 1
-bssBANK1 BANK1 1 C1 C1 2 1 1
+bssBANK1 BANK1 1 C1 C1 6 1 1
 strings STRING 0 800 800 47 2 1
-clrtext CODE 0 DD2 DD2 8 2 1
+clrtext CODE 0 DA3 DA3 8 2 1
 config CONFIG 4 2007 2007 2 2 1
-$C:\Users\diego\AppData\Local\Temp\xcAsje0.o
+$C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
 idloc IDLOC 5 2000 2000 4 2 1
 reset_vec CODE 0 0 0 3 2 1
 end_init CODE 0 E E 3 2 1
@@ -61,24 +61,21 @@ config CONFIG 4 2007 2007 2 2 1
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
 RAM 59-6F 1
-RAM C3-EF 1
+RAM C7-EF 1
 RAM 110-16F 1
 RAM 190-1EF 1
 BANK0 59-6F 1
-BANK1 C3-EF 1
+BANK1 C7-EF 1
 BANK2 110-16F 1
 BANK3 190-1EF 1
 CONST 3-3 2
-CONST 7FE-7FF 2
-CONST 847-DD1 2
+CONST 847-DA2 2
 CONST 1000-1FFF 2
 ENTRY 3-3 2
-ENTRY 7FE-7FF 2
-ENTRY 847-DD1 2
+ENTRY 847-DA2 2
 ENTRY 1000-1FFF 2
 CODE 3-3 2
-CODE 7FE-7FF 2
-CODE 847-DD1 2
+CODE 847-DA2 2
 CODE 1000-1FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
@@ -86,12 +83,10 @@ SFR2 100-10F 1
 SFR3 180-18F 1
 EEDATA 2100-21FF 2
 STRCODE 3-3 2
-STRCODE 7FE-7FF 2
-STRCODE 847-DD1 2
+STRCODE 847-DA2 2
 STRCODE 1000-1FFF 2
 STRING 3-3 2
-STRING 7FE-7FF 2
-STRING 847-DD1 2
+STRING 847-DA2 2
 STRING 1000-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -107,28 +102,32 @@ STRING 1000-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Kart_micros.X.production.o
-11 cinit CODE >1131:C:\Users\diego\AppData\Local\Temp\xcAsje0.s
-11 cinit CODE >1134:C:\Users\diego\AppData\Local\Temp\xcAsje0.s
-11 cinit CODE >1193:C:\Users\diego\AppData\Local\Temp\xcAsje0.s
-12 cinit CODE >1194:C:\Users\diego\AppData\Local\Temp\xcAsje0.s
-13 cinit CODE >1195:C:\Users\diego\AppData\Local\Temp\xcAsje0.s
-14 cinit CODE >1196:C:\Users\diego\AppData\Local\Temp\xcAsje0.s
-15 cinit CODE >1197:C:\Users\diego\AppData\Local\Temp\xcAsje0.s
-1A cinit CODE >1200:C:\Users\diego\AppData\Local\Temp\xcAsje0.s
-1B cinit CODE >1201:C:\Users\diego\AppData\Local\Temp\xcAsje0.s
-1C cinit CODE >1202:C:\Users\diego\AppData\Local\Temp\xcAsje0.s
-1D cinit CODE >1203:C:\Users\diego\AppData\Local\Temp\xcAsje0.s
-1E cinit CODE >1209:C:\Users\diego\AppData\Local\Temp\xcAsje0.s
-1E cinit CODE >1211:C:\Users\diego\AppData\Local\Temp\xcAsje0.s
-1F cinit CODE >1212:C:\Users\diego\AppData\Local\Temp\xcAsje0.s
-4 intentry CODE >86:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E3E text25 CODE >46:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-E3E text25 CODE >47:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-E46 text25 CODE >48:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-E48 text25 CODE >48:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-E4D text25 CODE >51:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-E4F text25 CODE >51:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-E53 text25 CODE >54:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
+11 cinit CODE >1126:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+11 cinit CODE >1129:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+11 cinit CODE >1194:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+12 cinit CODE >1195:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+13 cinit CODE >1196:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+14 cinit CODE >1197:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+15 cinit CODE >1198:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+1A cinit CODE >1201:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+1B cinit CODE >1202:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+1C cinit CODE >1203:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+1D cinit CODE >1204:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+1E cinit CODE >1205:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+1F cinit CODE >1206:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+20 cinit CODE >1207:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+21 cinit CODE >1208:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+22 cinit CODE >1214:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+22 cinit CODE >1216:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+23 cinit CODE >1217:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+4 intentry CODE >87:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+E01 text25 CODE >46:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+E01 text25 CODE >47:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+E09 text25 CODE >48:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+E0B text25 CODE >48:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+E10 text25 CODE >51:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+E12 text25 CODE >51:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+E16 text25 CODE >54:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
 FB0 text24 CODE >4:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fleq.c
 FB0 text24 CODE >7:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fleq.c
 FC2 text24 CODE >7:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fleq.c
@@ -144,302 +143,300 @@ FF8 text24 CODE >11:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\
 FFC text24 CODE >11:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fleq.c
 FFE text24 CODE >11:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fleq.c
 FFF text24 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fleq.c
-577 text23 CODE >4:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-577 text23 CODE >7:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-589 text23 CODE >7:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-58D text23 CODE >8:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-595 text23 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-5A5 text23 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-5A9 text23 CODE >10:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-5B1 text23 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-5B5 text23 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-5C0 text23 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-5C6 text23 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-5CC text23 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-5D9 text23 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-5DD text23 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-5E8 text23 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-5EE text23 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-5F4 text23 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-601 text23 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-603 text23 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-605 text23 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-607 text23 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-60B text23 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-60F text23 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-613 text23 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-617 text23 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-619 text23 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-61A text23 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
-4BF text22 CODE >10:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-4C0 text22 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-4C9 text22 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-4D2 text22 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-4D4 text22 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-4D6 text22 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-4D8 text22 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-4D9 text22 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-4E1 text22 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-4E1 text22 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-4E5 text22 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-4E9 text22 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-4F2 text22 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-4F4 text22 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-4F5 text22 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-4F9 text22 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-4FA text22 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-500 text22 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-502 text22 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-509 text22 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-50D text22 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-510 text22 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-514 text22 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-518 text22 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-51B text22 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-51C text22 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-522 text22 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-524 text22 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-524 text22 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-52B text22 CODE >34:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-52D text22 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-52F text22 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-536 text22 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-53C text22 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-540 text22 CODE >37:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-544 text22 CODE >38:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-54C text22 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-54E text22 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-554 text22 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-55A text22 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-564 text22 CODE >41:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-56D text22 CODE >42:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-56E text22 CODE >43:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-576 text22 CODE >44:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-6A9 text21 CODE >17:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWmanual.c
-6A9 text21 CODE >18:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWmanual.c
-6AF text21 CODE >20:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWmanual.c
-6B4 text21 CODE >21:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWmanual.c
-6E0 text21 CODE >22:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWmanual.c
-6FA text21 CODE >25:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWmanual.c
-6FE text21 CODE >25:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWmanual.c
-730 text21 CODE >26:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWmanual.c
-733 text21 CODE >29:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWmanual.c
-DEE text20 CODE >52:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-DEF text20 CODE >55:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-DF3 text20 CODE >56:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-DF6 text20 CODE >57:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-DF7 text20 CODE >58:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-DFA text20 CODE >59:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E6B text19 CODE >61:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E6C text19 CODE >64:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E70 text19 CODE >65:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E72 text19 CODE >66:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E75 text19 CODE >67:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E76 text19 CODE >68:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E78 text19 CODE >69:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E79 text19 CODE >70:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E7B text19 CODE >71:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E7D text19 CODE >72:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E7E text19 CODE >73:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E80 text19 CODE >74:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E81 text19 CODE >75:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E82 text19 CODE >77:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E83 text19 CODE >75:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E83 text19 CODE >78:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E89 text19 CODE >79:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E8A text19 CODE >80:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-324 text18 CODE >86:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-324 text18 CODE >88:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-328 text18 CODE >90:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-32D text18 CODE >90:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-331 text18 CODE >91:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-356 text18 CODE >94:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-357 text18 CODE >95:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-35C text18 CODE >95:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-360 text18 CODE >96:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-386 text18 CODE >97:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-38F text18 CODE >98:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-390 text18 CODE >99:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-395 text18 CODE >99:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-399 text18 CODE >100:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-3B6 text18 CODE >101:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-3B9 text18 CODE >104:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-3BD text18 CODE >113:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-3C1 text18 CODE >114:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-3C5 text18 CODE >115:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-3C9 text18 CODE >120:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-3CE text18 CODE >123:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-3D6 text18 CODE >124:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-3E1 text18 CODE >121:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-3E5 text18 CODE >130:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-3F2 text18 CODE >131:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-61B text17 CODE >43:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-61B text17 CODE >47:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-628 text17 CODE >48:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-633 text17 CODE >49:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-63E text17 CODE >49:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-644 text17 CODE >49:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-64A text17 CODE >50:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-64D text17 CODE >51:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-655 text17 CODE >52:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-659 text17 CODE >53:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-65D text17 CODE >54:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-660 text17 CODE >54:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-665 text17 CODE >57:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-666 text17 CODE >57:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-66E text17 CODE >57:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-670 text17 CODE >58:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-67B text17 CODE >60:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-67D text17 CODE >60:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-682 text17 CODE >63:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-686 text17 CODE >63:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-68D text17 CODE >64:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-691 text17 CODE >62:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-691 text17 CODE >65:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-696 text17 CODE >67:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-69B text17 CODE >68:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-6A2 text17 CODE >68:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-6A4 text17 CODE >68:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-6A6 text17 CODE >68:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-6A8 text17 CODE >70:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-F65 text16 CODE >11:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-F65 text16 CODE >13:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-F68 text16 CODE >13:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-F6A text16 CODE >13:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-F6C text16 CODE >14:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-F6D text16 CODE >14:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-F6F text16 CODE >14:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-F71 text16 CODE >16:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-F92 text16 CODE >17:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-F96 text16 CODE >18:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-F9A text16 CODE >20:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-F9C text16 CODE >21:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-F9E text16 CODE >23:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-F9F text16 CODE >24:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-FA1 text16 CODE >25:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-FA2 text16 CODE >28:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-FA6 text16 CODE >29:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-FA8 text16 CODE >30:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-FA9 text16 CODE >31:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-FAA text16 CODE >34:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-FAE text16 CODE >35:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-FAF text16 CODE >45:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWM.c
-DDA text15 CODE >12:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWmanual.c
-DDA text15 CODE >14:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWmanual.c
-DDF text15 CODE >14:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWmanual.c
-DE1 text15 CODE >14:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWmanual.c
-DE3 text15 CODE >16:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\PWmanual.c
-DE4 text14 CODE >41:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-DE4 text14 CODE >43:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-DEA text14 CODE >43:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-DEC text14 CODE >43:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-DED text14 CODE >44:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-DFB text13 CODE >46:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-DFB text13 CODE >48:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-E01 text13 CODE >49:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-E05 text13 CODE >51:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-E06 text13 CODE >52:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-E07 text13 CODE >54:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-E08 text13 CODE >55:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-734 text12 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-734 text12 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-73E text12 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-744 text12 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-748 text12 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-74C text12 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-74D text12 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-74F text12 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-756 text12 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-75C text12 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-762 text12 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-765 text12 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-770 text12 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-772 text12 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-776 text12 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-77A text12 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-77E text12 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-782 text12 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-785 text12 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-789 text12 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-78D text12 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-790 text12 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-793 text12 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-794 text12 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-79B text12 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-79D text12 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-7A5 text12 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-7BD text12 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
-3FB text11 CODE >14:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-3FB text11 CODE >16:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-406 text11 CODE >16:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-40C text11 CODE >16:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-43B text11 CODE >16:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-441 text11 CODE >18:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-445 text11 CODE >19:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-447 text11 CODE >21:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-44C text11 CODE >21:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-450 text11 CODE >21:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-454 text11 CODE >23:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-45F text11 CODE >23:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-465 text11 CODE >23:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-494 text11 CODE >23:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-49A text11 CODE >24:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-49F text11 CODE >24:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-4A3 text11 CODE >24:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-4A7 text11 CODE >25:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-4AD text11 CODE >26:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-4B1 text11 CODE >27:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-4B3 text11 CODE >28:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-4B4 text11 CODE >32:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-4B8 text11 CODE >33:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-4BA text11 CODE >34:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-4BA text11 CODE >36:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-4BE text11 CODE >38:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-E09 text10 CODE >59:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-E0C text10 CODE >61:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-E12 text10 CODE >62:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-E16 text10 CODE >63:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-EB2 text9 CODE >65:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-EB2 text9 CODE >67:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-EB5 text9 CODE >68:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-EB6 text9 CODE >69:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-EBD text9 CODE >69:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-ED1 text9 CODE >68:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-ED8 text9 CODE >68:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-EE2 text9 CODE >68:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-EE6 text9 CODE >70:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\USARTmodl.c
-E54 text8 CODE >273:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E54 text8 CODE >275:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E5F text8 CODE >276:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E6A text8 CODE >277:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-EE7 text7 CODE >231:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-EE7 text7 CODE >232:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-EEB text7 CODE >233:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-EEC text7 CODE >235:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-EF0 text7 CODE >236:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-EF2 text7 CODE >237:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-EF3 text7 CODE >238:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-EF4 text7 CODE >239:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-EF6 text7 CODE >240:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-EF9 text7 CODE >241:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-EFA text7 CODE >242:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-EFB text7 CODE >243:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-EFC text7 CODE >249:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-F00 text7 CODE >250:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-F01 text7 CODE >253:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-F02 text7 CODE >254:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-F03 text7 CODE >255:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-F04 text7 CODE >257:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-F0A text7 CODE >258:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-F0C text7 CODE >259:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-F0D text7 CODE >260:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-F14 text7 CODE >264:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-F17 text7 CODE >265:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-F1A text7 CODE >267:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-F1B text7 CODE >268:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-F1C text7 CODE >270:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-F1D text7 CODE >271:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-F1E text7 CODE >272:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
+5AB text23 CODE >4:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+5AB text23 CODE >7:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+5BD text23 CODE >7:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+5C1 text23 CODE >8:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+5C9 text23 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+5D9 text23 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+5DD text23 CODE >10:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+5E5 text23 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+5E9 text23 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+5F4 text23 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+5FA text23 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+600 text23 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+60D text23 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+611 text23 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+61C text23 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+622 text23 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+628 text23 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+635 text23 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+637 text23 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+639 text23 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+63B text23 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+63F text23 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+643 text23 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+647 text23 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+64B text23 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+64D text23 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+64E text23 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\flge.c
+4F3 text22 CODE >10:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+4F4 text22 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+4FD text22 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+506 text22 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+508 text22 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+50A text22 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+50C text22 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+50D text22 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+515 text22 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+515 text22 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+519 text22 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+51D text22 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+526 text22 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+528 text22 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+529 text22 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+52D text22 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+52E text22 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+534 text22 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+536 text22 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+53D text22 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+541 text22 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+544 text22 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+548 text22 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+54C text22 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+54F text22 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+550 text22 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+556 text22 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+558 text22 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+558 text22 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+55F text22 CODE >34:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+561 text22 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+563 text22 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+56A text22 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+570 text22 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+574 text22 CODE >37:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+578 text22 CODE >38:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+580 text22 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+582 text22 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+588 text22 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+58E text22 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+598 text22 CODE >41:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+5A1 text22 CODE >42:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+5A2 text22 CODE >43:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+5AA text22 CODE >44:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+6DD text21 CODE >17:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWmanual.c
+6DD text21 CODE >18:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWmanual.c
+6E3 text21 CODE >20:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWmanual.c
+6E8 text21 CODE >21:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWmanual.c
+714 text21 CODE >22:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWmanual.c
+72E text21 CODE >25:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWmanual.c
+732 text21 CODE >25:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWmanual.c
+764 text21 CODE >26:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWmanual.c
+767 text21 CODE >29:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWmanual.c
+DBF text20 CODE >53:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+DC0 text20 CODE >56:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+DC4 text20 CODE >57:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+DC7 text20 CODE >58:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+DC8 text20 CODE >59:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+DCB text20 CODE >60:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+E2E text19 CODE >62:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+E2F text19 CODE >65:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+E33 text19 CODE >66:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+E35 text19 CODE >67:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+E38 text19 CODE >68:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+E39 text19 CODE >69:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+E3B text19 CODE >70:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+E3C text19 CODE >71:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+E3E text19 CODE >72:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+E40 text19 CODE >73:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+E41 text19 CODE >74:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+E43 text19 CODE >75:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+E44 text19 CODE >76:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+E45 text19 CODE >78:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+E46 text19 CODE >76:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+E46 text19 CODE >79:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+E4C text19 CODE >80:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+E4D text19 CODE >81:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+330 text18 CODE >87:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+330 text18 CODE >89:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+334 text18 CODE >91:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+339 text18 CODE >91:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+33D text18 CODE >92:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+362 text18 CODE >93:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+36B text18 CODE >95:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+36C text18 CODE >96:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+371 text18 CODE >96:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+375 text18 CODE >97:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+39B text18 CODE >98:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+3A4 text18 CODE >99:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+3A5 text18 CODE >100:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+3AA text18 CODE >100:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+3AE text18 CODE >101:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+3CB text18 CODE >102:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+3CC text18 CODE >105:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+3D0 text18 CODE >114:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+3D4 text18 CODE >115:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+3D8 text18 CODE >116:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+3E0 text18 CODE >121:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+3E7 text18 CODE >125:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+3F5 text18 CODE >126:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+413 text18 CODE >122:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+419 text18 CODE >132:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+426 text18 CODE >146:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+64F text17 CODE >43:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+64F text17 CODE >47:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+65C text17 CODE >48:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+667 text17 CODE >49:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+672 text17 CODE >49:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+678 text17 CODE >49:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+67E text17 CODE >50:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+681 text17 CODE >51:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+689 text17 CODE >52:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+68D text17 CODE >53:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+691 text17 CODE >54:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+694 text17 CODE >54:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+699 text17 CODE >57:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+69A text17 CODE >57:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+6A2 text17 CODE >57:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+6A4 text17 CODE >58:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+6AF text17 CODE >60:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+6B1 text17 CODE >60:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+6B6 text17 CODE >63:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+6BA text17 CODE >63:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+6C1 text17 CODE >64:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+6C5 text17 CODE >62:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+6C5 text17 CODE >65:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+6CA text17 CODE >67:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+6CF text17 CODE >68:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+6D6 text17 CODE >68:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+6D8 text17 CODE >68:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+6DA text17 CODE >68:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+6DC text17 CODE >70:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+F65 text16 CODE >11:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+F65 text16 CODE >13:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+F68 text16 CODE >13:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+F6A text16 CODE >13:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+F6C text16 CODE >14:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+F6D text16 CODE >14:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+F6F text16 CODE >14:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+F71 text16 CODE >16:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+F92 text16 CODE >17:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+F96 text16 CODE >18:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+F9A text16 CODE >20:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+F9C text16 CODE >21:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+F9E text16 CODE >23:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+F9F text16 CODE >24:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+FA1 text16 CODE >25:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+FA2 text16 CODE >28:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+FA6 text16 CODE >29:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+FA8 text16 CODE >30:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+FA9 text16 CODE >31:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+FAA text16 CODE >34:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+FAE text16 CODE >35:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+FAF text16 CODE >45:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
+DAB text15 CODE >12:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWmanual.c
+DAB text15 CODE >14:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWmanual.c
+DB0 text15 CODE >14:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWmanual.c
+DB2 text15 CODE >14:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWmanual.c
+DB4 text15 CODE >16:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWmanual.c
+DB5 text14 CODE >41:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+DB5 text14 CODE >43:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+DBB text14 CODE >43:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+DBD text14 CODE >43:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+DBE text14 CODE >44:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+DCC text13 CODE >46:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+DCC text13 CODE >48:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+DD2 text13 CODE >49:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+DD6 text13 CODE >51:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+DD7 text13 CODE >52:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+DD8 text13 CODE >54:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+DD9 text13 CODE >55:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+768 text12 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+768 text12 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+772 text12 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+778 text12 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+77C text12 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+780 text12 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+781 text12 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+783 text12 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+78A text12 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+790 text12 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+796 text12 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+799 text12 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+7A4 text12 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+7A6 text12 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+7AA text12 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+7AE text12 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+7B2 text12 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+7B6 text12 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+7B9 text12 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+7BD text12 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+7C1 text12 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+7C4 text12 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+7C7 text12 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+7C8 text12 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+7CF text12 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+7D1 text12 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+7D9 text12 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+7F1 text12 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\__lldiv.c
+42F text11 CODE >14:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+42F text11 CODE >16:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+43A text11 CODE >16:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+440 text11 CODE >16:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+46F text11 CODE >16:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+475 text11 CODE >18:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+479 text11 CODE >19:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+47B text11 CODE >21:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+480 text11 CODE >21:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+484 text11 CODE >21:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+488 text11 CODE >23:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+493 text11 CODE >23:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+499 text11 CODE >23:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+4C8 text11 CODE >23:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+4CE text11 CODE >24:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+4D3 text11 CODE >24:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+4D7 text11 CODE >24:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+4DB text11 CODE >25:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+4E1 text11 CODE >26:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+4E5 text11 CODE >27:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+4E7 text11 CODE >28:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+4E8 text11 CODE >32:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+4EC text11 CODE >33:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+4EE text11 CODE >34:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+4EE text11 CODE >36:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+4F2 text11 CODE >38:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+7F2 text10 CODE >59:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+7F5 text10 CODE >61:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+7FB text10 CODE >62:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+7FF text10 CODE >63:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+E75 text9 CODE >65:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+E75 text9 CODE >67:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+E78 text9 CODE >68:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+E79 text9 CODE >69:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+E80 text9 CODE >69:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+E94 text9 CODE >68:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+E9B text9 CODE >68:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+EA5 text9 CODE >68:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+EA9 text9 CODE >70:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\USARTmodl.c
+E17 text8 CODE >288:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+E17 text8 CODE >290:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+E22 text8 CODE >291:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+E2D text8 CODE >292:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+EAA text7 CODE >246:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+EAA text7 CODE >247:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+EAE text7 CODE >248:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+EAF text7 CODE >250:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+EB3 text7 CODE >251:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+EB5 text7 CODE >253:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+EB6 text7 CODE >254:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+EB8 text7 CODE >257:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+EBB text7 CODE >258:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+EBC text7 CODE >264:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+EC0 text7 CODE >265:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+EC1 text7 CODE >268:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+EC2 text7 CODE >269:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+EC3 text7 CODE >270:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+EC4 text7 CODE >272:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+ECA text7 CODE >273:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+ECC text7 CODE >274:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+ECD text7 CODE >275:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+ED4 text7 CODE >279:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+ED7 text7 CODE >280:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+EDA text7 CODE >282:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+EDB text7 CODE >283:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+EDC text7 CODE >285:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+EDD text7 CODE >286:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+EDE text7 CODE >287:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
 F1F text6 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
 F1F text6 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
 F23 text6 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
@@ -465,161 +462,161 @@ F58 text6 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\l
 F5A text6 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
 F60 text6 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
 F64 text6 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-7BE text5 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7BE text5 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7C6 text5 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7C8 text5 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7C9 text5 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7CA text5 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7CE text5 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7D0 text5 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7D8 text5 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7DC text5 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7DE text5 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7E2 text5 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7E6 text5 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7E9 text5 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7EC text5 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7ED text5 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7F1 text5 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7F3 text5 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7F9 text5 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7FD text5 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-E8B text4 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
-E8B text4 CODE >43:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
-E8F text4 CODE >45:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
-E93 text4 CODE >46:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
-E95 text4 CODE >46:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
-E99 text4 CODE >47:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
-E9A text4 CODE >47:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
-E9E text4 CODE >47:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
-EA0 text4 CODE >48:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
-EA1 text4 CODE >48:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
-EA5 text4 CODE >48:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
-EA7 text4 CODE >49:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
-EAD text4 CODE >52:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
-EB1 text4 CODE >53:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
-E2A text3 CODE >8:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\isdigit.c
-E2D text3 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\isdigit.c
-E30 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\isdigit.c
-E36 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\isdigit.c
-E3D text3 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\isdigit.c
-22 text2 CODE >505:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-25 text2 CODE >550:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-27 text2 CODE >553:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-28 text2 CODE >555:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-2E text2 CODE >558:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-37 text2 CODE >559:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-38 text2 CODE >563:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-3A text2 CODE >565:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-3C text2 CODE >596:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-3C text2 CODE >597:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-3D text2 CODE >598:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-41 text2 CODE >601:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-4C text2 CODE >601:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-51 text2 CODE >601:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-54 text2 CODE >614:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-64 text2 CODE >615:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-68 text2 CODE >617:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-8B text2 CODE >618:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-95 text2 CODE >618:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-9A text2 CODE >618:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-A2 text2 CODE >619:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-B3 text2 CODE >844:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-B7 text2 CODE >845:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-B8 text2 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-C9 text2 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-CE text2 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-D1 text2 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-D4 text2 CODE >1312:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-E0 text2 CODE >1331:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-E2 text2 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-F5 text2 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+EDF text5 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+EDF text5 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+EE7 text5 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+EE9 text5 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+EEA text5 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+EEB text5 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+EEF text5 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+EF1 text5 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+EF9 text5 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+EFD text5 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+EFF text5 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F03 text5 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F07 text5 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F0A text5 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F0D text5 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F0E text5 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F12 text5 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F14 text5 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F1A text5 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F1E text5 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+E4E text4 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+E4E text4 CODE >43:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+E52 text4 CODE >45:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+E56 text4 CODE >46:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+E58 text4 CODE >46:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+E5C text4 CODE >47:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+E5D text4 CODE >47:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+E61 text4 CODE >47:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+E63 text4 CODE >48:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+E64 text4 CODE >48:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+E68 text4 CODE >48:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+E6A text4 CODE >49:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+E70 text4 CODE >52:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+E74 text4 CODE >53:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+DED text3 CODE >8:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\isdigit.c
+DF0 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\isdigit.c
+DF3 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\isdigit.c
+DF9 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\isdigit.c
+E00 text3 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\isdigit.c
+26 text2 CODE >505:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+29 text2 CODE >550:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+2B text2 CODE >553:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+2C text2 CODE >555:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+32 text2 CODE >558:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+3B text2 CODE >559:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+3C text2 CODE >563:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+3E text2 CODE >565:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+40 text2 CODE >596:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+40 text2 CODE >597:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+41 text2 CODE >598:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+45 text2 CODE >601:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+50 text2 CODE >601:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+55 text2 CODE >601:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+58 text2 CODE >614:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+68 text2 CODE >615:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+6C text2 CODE >617:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+8F text2 CODE >618:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+99 text2 CODE >618:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+9E text2 CODE >618:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+A6 text2 CODE >619:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+B7 text2 CODE >844:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+BB text2 CODE >845:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+BC text2 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+CD text2 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+D2 text2 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+D5 text2 CODE >848:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+D8 text2 CODE >1312:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+E4 text2 CODE >1331:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+E6 text2 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
 F9 text2 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-FE text2 CODE >1333:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-108 text2 CODE >1407:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-10B text2 CODE >1407:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+FD text2 CODE >1332:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+102 text2 CODE >1333:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+10C text2 CODE >1407:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
 10F text2 CODE >1407:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-113 text2 CODE >1408:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-11B text2 CODE >1408:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-11F text2 CODE >1410:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-123 text2 CODE >1413:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-127 text2 CODE >1441:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-12D text2 CODE >1443:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-138 text2 CODE >1443:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-143 text2 CODE >1450:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-149 text2 CODE >1456:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-154 text2 CODE >1456:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-15E text2 CODE >1498:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-160 text2 CODE >1500:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-161 text2 CODE >1515:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-19F text2 CODE >1550:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-1A8 text2 CODE >1500:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-1B1 text2 CODE >553:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-1C1 text2 CODE >1564:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-1C5 text2 CODE >1567:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
-E17 text1 CODE >133:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E17 text1 CODE >134:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E1D text1 CODE >135:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E21 text1 CODE >136:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E22 text1 CODE >137:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E23 text1 CODE >138:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E26 text1 CODE >140:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E28 text1 CODE >143:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-E29 text1 CODE >144:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-1C6 maintext CODE >151:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-1C6 maintext CODE >153:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-1CB maintext CODE >154:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-1CF maintext CODE >155:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-1E2 maintext CODE >156:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-1E5 maintext CODE >157:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-1F4 maintext CODE >158:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-202 maintext CODE >159:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-210 maintext CODE >161:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-21B maintext CODE >163:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-229 maintext CODE >165:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-234 maintext CODE >167:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-242 maintext CODE >169:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-24D maintext CODE >170:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-250 maintext CODE >172:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-254 maintext CODE >177:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-25A maintext CODE >178:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-263 maintext CODE >178:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-267 maintext CODE >178:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-26C maintext CODE >179:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-27D maintext CODE >180:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-27E maintext CODE >182:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-282 maintext CODE >182:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-287 maintext CODE >192:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-292 maintext CODE >193:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-2A0 maintext CODE >194:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-2AB maintext CODE >197:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-2B0 maintext CODE >198:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-2B4 maintext CODE >200:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-2B5 maintext CODE >202:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-2C4 maintext CODE >203:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-2CF maintext CODE >204:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-2DE maintext CODE >205:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-2E9 maintext CODE >206:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-2EE maintext CODE >207:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-2F2 maintext CODE >209:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-2F3 maintext CODE >211:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-2FE maintext CODE >211:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-303 maintext CODE >211:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-306 maintext CODE >211:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-309 maintext CODE >213:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-312 maintext CODE >215:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-31A maintext CODE >216:C:\Users\diego\Videos\Kart_p_micros\Kart_micros\Kart_micros.X\Kart_main.c
-DD2 clrtext CODE >1180:C:\Users\diego\AppData\Local\Temp\xcAsje0.s
-DD2 clrtext CODE >1181:C:\Users\diego\AppData\Local\Temp\xcAsje0.s
-DD3 clrtext CODE >1182:C:\Users\diego\AppData\Local\Temp\xcAsje0.s
-DD3 clrtext CODE >1183:C:\Users\diego\AppData\Local\Temp\xcAsje0.s
-DD4 clrtext CODE >1184:C:\Users\diego\AppData\Local\Temp\xcAsje0.s
-DD5 clrtext CODE >1185:C:\Users\diego\AppData\Local\Temp\xcAsje0.s
-DD6 clrtext CODE >1186:C:\Users\diego\AppData\Local\Temp\xcAsje0.s
-DD7 clrtext CODE >1187:C:\Users\diego\AppData\Local\Temp\xcAsje0.s
-DD8 clrtext CODE >1188:C:\Users\diego\AppData\Local\Temp\xcAsje0.s
-DD9 clrtext CODE >1189:C:\Users\diego\AppData\Local\Temp\xcAsje0.s
+113 text2 CODE >1407:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+117 text2 CODE >1408:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+11F text2 CODE >1408:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+123 text2 CODE >1410:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+127 text2 CODE >1413:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+12B text2 CODE >1441:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+131 text2 CODE >1443:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+13C text2 CODE >1443:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+147 text2 CODE >1450:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+14D text2 CODE >1456:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+158 text2 CODE >1456:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+162 text2 CODE >1498:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+164 text2 CODE >1500:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+165 text2 CODE >1515:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+1A3 text2 CODE >1550:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+1AC text2 CODE >1500:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+1B5 text2 CODE >553:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+1C5 text2 CODE >1564:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+1C9 text2 CODE >1567:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\doprnt.c
+DDA text1 CODE >148:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+DDA text1 CODE >149:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+DE0 text1 CODE >150:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+DE4 text1 CODE >151:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+DE5 text1 CODE >152:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+DE6 text1 CODE >153:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+DE9 text1 CODE >155:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+DEB text1 CODE >158:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+DEC text1 CODE >159:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+1CA maintext CODE >166:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+1CA maintext CODE >168:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+1CF maintext CODE >169:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+1D3 maintext CODE >170:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+1E6 maintext CODE >171:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+1E9 maintext CODE >172:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+1F8 maintext CODE >173:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+206 maintext CODE >174:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+214 maintext CODE >176:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+21F maintext CODE >178:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+22D maintext CODE >180:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+238 maintext CODE >182:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+246 maintext CODE >184:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+251 maintext CODE >185:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+254 maintext CODE >187:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+258 maintext CODE >192:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+25E maintext CODE >193:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+267 maintext CODE >193:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+26B maintext CODE >193:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+270 maintext CODE >194:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+281 maintext CODE >195:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+282 maintext CODE >197:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+286 maintext CODE >197:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+28B maintext CODE >207:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+296 maintext CODE >208:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+2AC maintext CODE >209:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+2B7 maintext CODE >212:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+2BC maintext CODE >213:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+2C0 maintext CODE >215:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+2C1 maintext CODE >217:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+2D0 maintext CODE >218:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+2DB maintext CODE >219:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+2EA maintext CODE >220:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+2F5 maintext CODE >221:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+2FA maintext CODE >222:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+2FE maintext CODE >224:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+2FF maintext CODE >226:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+30A maintext CODE >226:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+30F maintext CODE >226:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+312 maintext CODE >226:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+315 maintext CODE >228:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+31E maintext CODE >230:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+326 maintext CODE >231:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
+DA3 clrtext CODE >1181:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+DA3 clrtext CODE >1182:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+DA4 clrtext CODE >1183:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+DA4 clrtext CODE >1184:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+DA5 clrtext CODE >1185:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+DA6 clrtext CODE >1186:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+DA7 clrtext CODE >1187:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+DA8 clrtext CODE >1188:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+DA9 clrtext CODE >1189:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+DAA clrtext CODE >1190:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -632,11 +629,11 @@ DD9 clrtext CODE >1189:C:\Users\diego\AppData\Local\Temp\xcAsje0.s
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-_i C1 0 BANK1 1 bssBANK1 dist/default/production\Kart_micros.X.production.o
+_i C5 0 BANK1 1 bssBANK1 dist/default/production\Kart_micros.X.production.o
 ___latbits 2 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 ___lwmod@counter A4 0 BANK1 1 cstackBANK1 dist/default/production\Kart_micros.X.production.o
 __Hspace_0 1000 0 ABS 0 - -
-__Hspace_1 C3 0 ABS 0 - -
+__Hspace_1 C7 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 4010 0 ABS 0 - -
@@ -649,26 +646,26 @@ _OERR C1 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 _RCIF 65 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 _TRMT 4C1 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 _WPUB 95 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\diego\AppData\Local\Temp\xcAsje0.o
-_main 38C 0 CODE 0 maintext dist/default/production\Kart_micros.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
+_main 394 0 CODE 0 maintext dist/default/production\Kart_micros.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
-start 1C 0 CODE 0 init C:\Users\diego\AppData\Local\Temp\xcAsje0.o
+start 1C 0 CODE 0 init C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
 ?___wmul 37 0 BANK0 1 cstackBANK0 dist/default/production\Kart_micros.X.production.o
 _OPTION_REGbits 81 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
 PWM_init@periodo_ms A6 0 BANK1 1 cstackBANK1 dist/default/production\Kart_micros.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\diego\AppData\Local\Temp\xcAsje0.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\diego\AppData\Local\Temp\xcAsje0.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\diego\AppData\Local\Temp\xcAsje0.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\diego\AppData\Local\Temp\xcAsje0.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\diego\AppData\Local\Temp\xcAsje0.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\diego\AppData\Local\Temp\xcAsje0.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
-_UART_Print 1D64 0 CODE 0 text9 dist/default/production\Kart_micros.X.production.o
+_UART_Print 1CEA 0 CODE 0 text9 dist/default/production\Kart_micros.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
-_writeEEPROM 1CD6 0 CODE 0 text19 dist/default/production\Kart_micros.X.production.o
-__end_of_preguntas 1CD6 0 CODE 0 text8 dist/default/production\Kart_micros.X.production.o
+_writeEEPROM 1C5C 0 CODE 0 text19 dist/default/production\Kart_micros.X.production.o
+__end_of_preguntas 1C5C 0 CODE 0 text8 dist/default/production\Kart_micros.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext -
 ___wmul@multiplicand 39 0 BANK0 1 cstackBANK0 dist/default/production\Kart_micros.X.production.o
 _ADRESH 1E 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
@@ -677,24 +674,24 @@ _EECON1bits 18C 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 _CCPR1L 15 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 _CCPR2L 1B 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 __end_of___fleq 2000 0 CODE 0 text24 dist/default/production\Kart_micros.X.production.o
-__end_of___flge C36 0 CODE 0 text23 dist/default/production\Kart_micros.X.production.o
-__end_of___wmul 1D64 0 CODE 0 text4 dist/default/production\Kart_micros.X.production.o
-_preguntas 1CA8 0 CODE 0 text8 dist/default/production\Kart_micros.X.production.o
+__end_of___flge C9E 0 CODE 0 text23 dist/default/production\Kart_micros.X.production.o
+__end_of___wmul 1CEA 0 CODE 0 text4 dist/default/production\Kart_micros.X.production.o
+_preguntas 1C2E 0 CODE 0 text8 dist/default/production\Kart_micros.X.production.o
 _EECON2 18D 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 _EEDATA 10C 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
 ___lwmod@divisor A0 0 BANK1 1 cstackBANK1 dist/default/production\Kart_micros.X.production.o
-__end_of___fltol D52 0 CODE 0 text17 dist/default/production\Kart_micros.X.production.o
-__end_of___lldiv F7C 0 CODE 0 text12 dist/default/production\Kart_micros.X.production.o
+__end_of___fltol DBA 0 CODE 0 text17 dist/default/production\Kart_micros.X.production.o
+__end_of___lldiv FE4 0 CODE 0 text12 dist/default/production\Kart_micros.X.production.o
 __end_of___lwdiv 1ECA 0 CODE 0 text6 dist/default/production\Kart_micros.X.production.o
-__end_of___lwmod FFC 0 CODE 0 text5 dist/default/production\Kart_micros.X.production.o
+__end_of___lwmod 1E3E 0 CODE 0 text5 dist/default/production\Kart_micros.X.production.o
 _INTCON B 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
-__end_of_PWmanual_func E68 0 CODE 0 text21 dist/default/production\Kart_micros.X.production.o
-__end_of_PWmanual_init 1BC8 0 CODE 0 text15 dist/default/production\Kart_micros.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\diego\AppData\Local\Temp\xcAsje0.o
-___stacklo 0 0 ABS 0 - C:\Users\diego\AppData\Local\Temp\xcAsje0.o
+__end_of_PWmanual_func ED0 0 CODE 0 text21 dist/default/production\Kart_micros.X.production.o
+__end_of_PWmanual_init 1B6A 0 CODE 0 text15 dist/default/production\Kart_micros.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
+___stacklo 0 0 ABS 0 - C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
 _dpowers 1020 0 STRING 0 strings dist/default/production\Kart_micros.X.production.o
-__end_of_UART_Print 1DCE 0 CODE 0 text9 dist/default/production\Kart_micros.X.production.o
+__end_of_UART_Print 1D54 0 CODE 0 text9 dist/default/production\Kart_micros.X.production.o
 ___lwdiv@quotient 3D 0 BANK0 1 cstackBANK0 dist/default/production\Kart_micros.X.production.o
 ___lwmod@dividend A2 0 BANK1 1 cstackBANK1 dist/default/production\Kart_micros.X.production.o
 ___lldiv@counter A4 0 BANK1 1 cstackBANK1 dist/default/production\Kart_micros.X.production.o
@@ -703,16 +700,16 @@ UART_Init@n AD 0 BANK1 1 cstackBANK1 dist/default/production\Kart_micros.X.produ
 _OSCCON 8F 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 _TRISCbits 87 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 ___lldiv@dividend 3B 0 BANK0 1 cstackBANK0 dist/default/production\Kart_micros.X.production.o
-clear_ram0 1BA4 0 CODE 0 clrtext dist/default/production\Kart_micros.X.production.o
+clear_ram0 1B46 0 CODE 0 clrtext dist/default/production\Kart_micros.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\Kart_micros.X.production.o
 __pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/production\Kart_micros.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\diego\AppData\Local\Temp\xcAsje0.o
-_readEEPROM 1BDC 0 CODE 0 text20 dist/default/production\Kart_micros.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
+_readEEPROM 1B7E 0 CODE 0 text20 dist/default/production\Kart_micros.X.production.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
 __Hbank3 0 0 ABS 0 bank3 -
-__Hcinit 44 0 CODE 0 cinit -
+__Hcinit 4C 0 CODE 0 cinit -
 __Hidloc 4008 0 IDLOC 5 idloc -
 __Hstack 0 0 STACK 2 stack -
 __stringbase 101E 0 STRING 0 strings dist/default/production\Kart_micros.X.production.o
@@ -723,14 +720,14 @@ __Hmaintext 0 0 ABS 0 maintext -
 ___xxtofl@arg 7A 0 COMMON 1 cstackCOMMON dist/default/production\Kart_micros.X.production.o
 ___xxtofl@exp 79 0 COMMON 1 cstackCOMMON dist/default/production\Kart_micros.X.production.o
 ___xxtofl@val 70 0 COMMON 1 cstackCOMMON dist/default/production\Kart_micros.X.production.o
-__end_of_sprintf 38C 0 CODE 0 text2 dist/default/production\Kart_micros.X.production.o
+__end_of_sprintf 394 0 CODE 0 text2 dist/default/production\Kart_micros.X.production.o
 __Hcommon 0 0 ABS 0 common -
 __Hconfig 4012 0 CONFIG 4 config -
 __Lbank0 0 0 ABS 0 bank0 -
 __Lbank1 0 0 ABS 0 bank1 -
 __Lbank2 0 0 ABS 0 bank2 -
 __Lbank3 0 0 ABS 0 bank3 -
-__end_of_isdigit 1C7C 0 CODE 0 text3 dist/default/production\Kart_micros.X.production.o
+__end_of_isdigit 1C02 0 CODE 0 text3 dist/default/production\Kart_micros.X.production.o
 __Lcinit 22 0 CODE 0 cinit -
 __Lidloc 0 0 IDLOC 5 idloc -
 __Lstack 0 0 STACK 2 stack -
@@ -754,8 +751,8 @@ __Lsfr2 0 0 ABS 0 sfr2 -
 __Lsfr3 0 0 ABS 0 sfr3 -
 __Ltext 0 0 ABS 0 text -
 ___fleq 1F60 0 CODE 0 text24 dist/default/production\Kart_micros.X.production.o
-___flge AEE 0 CODE 0 text23 dist/default/production\Kart_micros.X.production.o
-___wmul 1D16 0 CODE 0 text4 dist/default/production\Kart_micros.X.production.o
+___flge B56 0 CODE 0 text23 dist/default/production\Kart_micros.X.production.o
+___wmul 1C9C 0 CODE 0 text4 dist/default/production\Kart_micros.X.production.o
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __LcstackBANK1 0 0 ABS 0 cstackBANK1 -
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
@@ -763,23 +760,26 @@ _PR2 92 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 _RB0 30 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 _RB1 31 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 __S0 1000 0 ABS 0 - -
-__S1 C3 0 ABS 0 - -
+__S1 C7 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
-_isr 648 0 CODE 0 text18 dist/default/production\Kart_micros.X.production.o
+_isr 660 0 CODE 0 text18 dist/default/production\Kart_micros.X.production.o
 _val 40 0 BANK0 1 bssBANK0 dist/default/production\Kart_micros.X.production.o
 saved_w 7E 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 __end_of_message 1052 0 STRING 0 strings dist/default/production\Kart_micros.X.production.o
 sprintf@val AD 0 BANK1 1 cstackBANK1 dist/default/production\Kart_micros.X.production.o
-__end_of_readEEPROM 1BF6 0 CODE 0 text20 dist/default/production\Kart_micros.X.production.o
-___xxtofl 97E 0 CODE 0 text22 dist/default/production\Kart_micros.X.production.o
-__end_of_isr 7F6 0 CODE 0 text18 dist/default/production\Kart_micros.X.production.o
-__end_of_writeEEPROM 1D16 0 CODE 0 text19 dist/default/production\Kart_micros.X.production.o
+__end_of_readEEPROM 1B98 0 CODE 0 text20 dist/default/production\Kart_micros.X.production.o
+___xxtofl 9E6 0 CODE 0 text22 dist/default/production\Kart_micros.X.production.o
+__end_of_isr 85E 0 CODE 0 text18 dist/default/production\Kart_micros.X.production.o
+__end_of_writeEEPROM 1C9C 0 CODE 0 text19 dist/default/production\Kart_micros.X.production.o
+_valpot0 4C 0 BANK0 1 bssBANK0 dist/default/production\Kart_micros.X.production.o
+_valpot1 4A 0 BANK0 1 bssBANK0 dist/default/production\Kart_micros.X.production.o
+_valprom 48 0 BANK0 1 bssBANK0 dist/default/production\Kart_micros.X.production.o
 writeEEPROM@dataEE 70 0 COMMON 1 cstackCOMMON dist/default/production\Kart_micros.X.production.o
 __Lintentry 8 0 CODE 0 intentry -
 ___lldiv@divisor 37 0 BANK0 1 cstackBANK0 dist/default/production\Kart_micros.X.production.o
 __stringtab 1000 0 STRING 0 strings dist/default/production\Kart_micros.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\diego\AppData\Local\Temp\xcAsje0.o
-__end_of___xxtofl AEE 0 CODE 0 text22 dist/default/production\Kart_micros.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
+__end_of___xxtofl B56 0 CODE 0 text22 dist/default/production\Kart_micros.X.production.o
 readEEPROM@address 70 0 COMMON 1 cstackCOMMON dist/default/production\Kart_micros.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
 __LbssBANK1 0 0 ABS 0 bssBANK1 -
@@ -787,35 +787,33 @@ _RCSTAbits 18 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 _PIE1bits 8C 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 sprintf@flag AC 0 BANK1 1 cstackBANK1 dist/default/production\Kart_micros.X.production.o
 sprintf@prec AF 0 BANK1 1 cstackBANK1 dist/default/production\Kart_micros.X.production.o
-__ptext10 1C12 0 CODE 0 text10 dist/default/production\Kart_micros.X.production.o
-__ptext11 7F6 0 CODE 0 text11 dist/default/production\Kart_micros.X.production.o
-__ptext12 E68 0 CODE 0 text12 dist/default/production\Kart_micros.X.production.o
-__ptext13 1BF6 0 CODE 0 text13 dist/default/production\Kart_micros.X.production.o
-__ptext14 1BC8 0 CODE 0 text14 dist/default/production\Kart_micros.X.production.o
-__ptext15 1BB4 0 CODE 0 text15 dist/default/production\Kart_micros.X.production.o
+__ptext10 FE4 0 CODE 0 text10 dist/default/production\Kart_micros.X.production.o
+__ptext11 85E 0 CODE 0 text11 dist/default/production\Kart_micros.X.production.o
+__ptext12 ED0 0 CODE 0 text12 dist/default/production\Kart_micros.X.production.o
+__ptext13 1B98 0 CODE 0 text13 dist/default/production\Kart_micros.X.production.o
+__ptext14 1B6A 0 CODE 0 text14 dist/default/production\Kart_micros.X.production.o
+__ptext15 1B56 0 CODE 0 text15 dist/default/production\Kart_micros.X.production.o
 __ptext16 1ECA 0 CODE 0 text16 dist/default/production\Kart_micros.X.production.o
-__ptext17 C36 0 CODE 0 text17 dist/default/production\Kart_micros.X.production.o
-__ptext18 648 0 CODE 0 text18 dist/default/production\Kart_micros.X.production.o
-__ptext19 1CD6 0 CODE 0 text19 dist/default/production\Kart_micros.X.production.o
-__ptext20 1BDC 0 CODE 0 text20 dist/default/production\Kart_micros.X.production.o
-__ptext21 D52 0 CODE 0 text21 dist/default/production\Kart_micros.X.production.o
-__ptext22 97E 0 CODE 0 text22 dist/default/production\Kart_micros.X.production.o
-__ptext23 AEE 0 CODE 0 text23 dist/default/production\Kart_micros.X.production.o
+__ptext17 C9E 0 CODE 0 text17 dist/default/production\Kart_micros.X.production.o
+__ptext18 660 0 CODE 0 text18 dist/default/production\Kart_micros.X.production.o
+__ptext19 1C5C 0 CODE 0 text19 dist/default/production\Kart_micros.X.production.o
+__ptext20 1B7E 0 CODE 0 text20 dist/default/production\Kart_micros.X.production.o
+__ptext21 DBA 0 CODE 0 text21 dist/default/production\Kart_micros.X.production.o
+__ptext22 9E6 0 CODE 0 text22 dist/default/production\Kart_micros.X.production.o
+__ptext23 B56 0 CODE 0 text23 dist/default/production\Kart_micros.X.production.o
 __ptext24 1F60 0 CODE 0 text24 dist/default/production\Kart_micros.X.production.o
-__ptext25 1C7C 0 CODE 0 text25 dist/default/production\Kart_micros.X.production.o
-___fltol C36 0 CODE 0 text17 dist/default/production\Kart_micros.X.production.o
-___lldiv E68 0 CODE 0 text12 dist/default/production\Kart_micros.X.production.o
+__ptext25 1C02 0 CODE 0 text25 dist/default/production\Kart_micros.X.production.o
+___fltol C9E 0 CODE 0 text17 dist/default/production\Kart_micros.X.production.o
+___lldiv ED0 0 CODE 0 text12 dist/default/production\Kart_micros.X.production.o
 ___lwdiv 1E3E 0 CODE 0 text6 dist/default/production\Kart_micros.X.production.o
-___lwmod F7C 0 CODE 0 text5 dist/default/production\Kart_micros.X.production.o
-__pmaintext 38C 0 CODE 0 maintext dist/default/production\Kart_micros.X.production.o
+___lwmod 1DBE 0 CODE 0 text5 dist/default/production\Kart_micros.X.production.o
+__pmaintext 394 0 CODE 0 maintext dist/default/production\Kart_micros.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
 ___wmul@multiplier 37 0 BANK0 1 cstackBANK0 dist/default/production\Kart_micros.X.production.o
 PWmanual_init@numport 37 0 BANK0 1 cstackBANK0 dist/default/production\Kart_micros.X.production.o
 main@text B7 0 BANK1 1 cstackBANK1 dist/default/production\Kart_micros.X.production.o
 ___lwdiv@divisor 37 0 BANK0 1 cstackBANK0 dist/default/production\Kart_micros.X.production.o
-_valadr 4E 0 BANK0 1 bssBANK0 dist/default/production\Kart_micros.X.production.o
-_valpot 4C 0 BANK0 1 bssBANK0 dist/default/production\Kart_micros.X.production.o
 _ADCON0bits 1F 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 _ADCON1bits 9F 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 __end_of__stringtab 1020 0 STRING 0 strings dist/default/production\Kart_micros.X.production.o
@@ -827,7 +825,7 @@ __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
 __Lspace_4 0 0 ABS 0 - -
-__end_of_UART_Data_Ready 1BDC 0 CODE 0 text14 dist/default/production\Kart_micros.X.production.o
+__end_of_UART_Data_Ready 1B7E 0 CODE 0 text14 dist/default/production\Kart_micros.X.production.o
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __HcstackBANK1 0 0 ABS 0 cstackBANK1 -
 ___flge@ff1 20 0 BANK0 1 cstackBANK0 dist/default/production\Kart_micros.X.production.o
@@ -837,7 +835,7 @@ _PIR2bits D 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 __Lend_init 1C 0 CODE 0 end_init -
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 ___fltol@exp1 A1 0 BANK1 1 cstackBANK1 dist/default/production\Kart_micros.X.production.o
-end_of_initialization 3C 0 CODE 0 cinit dist/default/production\Kart_micros.X.production.o
+end_of_initialization 44 0 CODE 0 cinit dist/default/production\Kart_micros.X.production.o
 __Hintentry 1C 0 CODE 0 intentry -
 PWmanual_func@valad 2C 0 BANK0 1 cstackBANK0 dist/default/production\Kart_micros.X.production.o
 __Lstrings 0 0 ABS 0 strings -
@@ -850,56 +848,54 @@ __Hreset_vec 6 0 CODE 0 reset_vec -
 UART_Init@baud_rate A5 0 BANK1 1 cstackBANK1 dist/default/production\Kart_micros.X.production.o
 __HbssBANK0 0 0 ABS 0 bssBANK0 -
 __HbssBANK1 0 0 ABS 0 bssBANK1 -
-__end_of_UART_GetC 1C12 0 CODE 0 text13 dist/default/production\Kart_micros.X.production.o
-__end_of_UART_Init 97E 0 CODE 0 text11 dist/default/production\Kart_micros.X.production.o
-__end_of_UART_PutC 1C2E 0 CODE 0 text10 dist/default/production\Kart_micros.X.production.o
-__end_of_uart_read 1C54 0 CODE 0 text1 dist/default/production\Kart_micros.X.production.o
+__end_of_UART_GetC 1BB4 0 CODE 0 text13 dist/default/production\Kart_micros.X.production.o
+__end_of_UART_Init 9E6 0 CODE 0 text11 dist/default/production\Kart_micros.X.production.o
+__end_of_UART_PutC 1000 0 CODE 0 text10 dist/default/production\Kart_micros.X.production.o
+__end_of_uart_read 1BDA 0 CODE 0 text1 dist/default/production\Kart_micros.X.production.o
 UART_Print@i 3C 0 BANK0 1 cstackBANK0 dist/default/production\Kart_micros.X.production.o
-__ptext1 1C2E 0 CODE 0 text1 dist/default/production\Kart_micros.X.production.o
-__ptext2 44 0 CODE 0 text2 dist/default/production\Kart_micros.X.production.o
-__ptext3 1C54 0 CODE 0 text3 dist/default/production\Kart_micros.X.production.o
-__ptext4 1D16 0 CODE 0 text4 dist/default/production\Kart_micros.X.production.o
-__ptext5 F7C 0 CODE 0 text5 dist/default/production\Kart_micros.X.production.o
+__ptext1 1BB4 0 CODE 0 text1 dist/default/production\Kart_micros.X.production.o
+__ptext2 4C 0 CODE 0 text2 dist/default/production\Kart_micros.X.production.o
+__ptext3 1BDA 0 CODE 0 text3 dist/default/production\Kart_micros.X.production.o
+__ptext4 1C9C 0 CODE 0 text4 dist/default/production\Kart_micros.X.production.o
+__ptext5 1DBE 0 CODE 0 text5 dist/default/production\Kart_micros.X.production.o
 __ptext6 1E3E 0 CODE 0 text6 dist/default/production\Kart_micros.X.production.o
-__ptext7 1DCE 0 CODE 0 text7 dist/default/production\Kart_micros.X.production.o
-__ptext8 1CA8 0 CODE 0 text8 dist/default/production\Kart_micros.X.production.o
-__ptext9 1D64 0 CODE 0 text9 dist/default/production\Kart_micros.X.production.o
-_sprintf 44 0 CODE 0 text2 dist/default/production\Kart_micros.X.production.o
+__ptext7 1D54 0 CODE 0 text7 dist/default/production\Kart_micros.X.production.o
+__ptext8 1C2E 0 CODE 0 text8 dist/default/production\Kart_micros.X.production.o
+__ptext9 1CEA 0 CODE 0 text9 dist/default/production\Kart_micros.X.production.o
+_sprintf 4C 0 CODE 0 text2 dist/default/production\Kart_micros.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 ?___xxtofl 70 0 COMMON 1 cstackCOMMON dist/default/production\Kart_micros.X.production.o
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 sprintf@ap AB 0 BANK1 1 cstackBANK1 dist/default/production\Kart_micros.X.production.o
 sprintf@sp B0 0 BANK1 1 cstackBANK1 dist/default/production\Kart_micros.X.production.o
-_isdigit 1C54 0 CODE 0 text3 dist/default/production\Kart_micros.X.production.o
+_isdigit 1BDA 0 CODE 0 text3 dist/default/production\Kart_micros.X.production.o
 ___fltol@sign1 A0 0 BANK1 1 cstackBANK1 dist/default/production\Kart_micros.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec -
-_UART_GetC 1BF6 0 CODE 0 text13 dist/default/production\Kart_micros.X.production.o
-_UART_Init 7F6 0 CODE 0 text11 dist/default/production\Kart_micros.X.production.o
-_UART_PutC 1C12 0 CODE 0 text10 dist/default/production\Kart_micros.X.production.o
-_UART_Data_Ready 1BC8 0 CODE 0 text14 dist/default/production\Kart_micros.X.production.o
-_uart_read 1C2E 0 CODE 0 text1 dist/default/production\Kart_micros.X.production.o
+_UART_GetC 1B98 0 CODE 0 text13 dist/default/production\Kart_micros.X.production.o
+_UART_Init 85E 0 CODE 0 text11 dist/default/production\Kart_micros.X.production.o
+_UART_PutC FE4 0 CODE 0 text10 dist/default/production\Kart_micros.X.production.o
+_UART_Data_Ready 1B6A 0 CODE 0 text14 dist/default/production\Kart_micros.X.production.o
+_uart_read 1BB4 0 CODE 0 text1 dist/default/production\Kart_micros.X.production.o
 ___fltol@f1 37 0 BANK0 1 cstackBANK0 dist/default/production\Kart_micros.X.production.o
-__end_of__initialization 3C 0 CODE 0 cinit dist/default/production\Kart_micros.X.production.o
+__end_of__initialization 44 0 CODE 0 cinit dist/default/production\Kart_micros.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
 __Lclrtext 0 0 ABS 0 clrtext -
 ___lldiv@quotient A0 0 BANK1 1 cstackBANK1 dist/default/production\Kart_micros.X.production.o
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\Kart_micros.X.production.o
 _message 1034 0 STRING 0 strings dist/default/production\Kart_micros.X.production.o
-_PWM_duty 1C7C 0 CODE 0 text25 dist/default/production\Kart_micros.X.production.o
+_PWM_duty 1C02 0 CODE 0 text25 dist/default/production\Kart_micros.X.production.o
 _PWM_init 1ECA 0 CODE 0 text16 dist/default/production\Kart_micros.X.production.o
 __Hend_init 22 0 CODE 0 end_init -
 sprintf@c B3 0 BANK1 1 cstackBANK1 dist/default/production\Kart_micros.X.production.o
 sprintf@f A5 0 BANK1 1 cstackBANK1 dist/default/production\Kart_micros.X.production.o
-__end_of_main 648 0 CODE 0 maintext dist/default/production\Kart_micros.X.production.o
+__end_of_main 660 0 CODE 0 maintext dist/default/production\Kart_micros.X.production.o
 _CCP2CONbits 1D 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 isdigit@c 38 0 BANK0 1 cstackBANK0 dist/default/production\Kart_micros.X.production.o
 _ANSEL 188 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 __end_of_dpowers 1034 0 STRING 0 strings dist/default/production\Kart_micros.X.production.o
 _EEADR 10D 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 ?_sprintf A5 0 BANK1 1 cstackBANK1 dist/default/production\Kart_micros.X.production.o
-_isdigit$1183 37 0 BANK0 1 cstackBANK0 dist/default/production\Kart_micros.X.production.o
-_PORTB 6 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
-_PORTC 7 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
+_isdigit$1182 37 0 BANK0 1 cstackBANK0 dist/default/production\Kart_micros.X.production.o
 _PORTD 8 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 _PORTE 9 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 writeEEPROM@INTCON_SAVE 72 0 COMMON 1 cstackCOMMON dist/default/production\Kart_micros.X.production.o
@@ -908,16 +904,15 @@ _RCSTA 18 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 _SPBRG 99 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 _TRISA 85 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 _TRISB 86 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
-_TRISD 88 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 _TXREG 19 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 _TXSTA 98 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
-__end_of_PWM_duty 1CA8 0 CODE 0 text25 dist/default/production\Kart_micros.X.production.o
+__end_of_PWM_duty 1C2E 0 CODE 0 text25 dist/default/production\Kart_micros.X.production.o
 __end_of_PWM_init 1F60 0 CODE 0 text16 dist/default/production\Kart_micros.X.production.o
-__end_of_setup 1E3E 0 CODE 0 text7 dist/default/production\Kart_micros.X.production.o
+__end_of_setup 1DBE 0 CODE 0 text7 dist/default/production\Kart_micros.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
 interrupt_function 8 0 CODE 0 intentry dist/default/production\Kart_micros.X.production.o
-_setup 1DCE 0 CODE 0 text7 dist/default/production\Kart_micros.X.production.o
+_setup 1D54 0 CODE 0 text7 dist/default/production\Kart_micros.X.production.o
 __pintentry 8 0 CODE 0 intentry dist/default/production\Kart_micros.X.production.o
 sprintf@width B1 0 BANK1 1 cstackBANK1 dist/default/production\Kart_micros.X.production.o
 __initialization 22 0 CODE 0 cinit dist/default/production\Kart_micros.X.production.o
@@ -930,8 +925,8 @@ __pstrings 1000 0 STRING 0 strings dist/default/production\Kart_micros.X.product
 PWM_duty@chn 20 0 BANK0 1 cstackBANK0 dist/default/production\Kart_micros.X.production.o
 ___wmul@product 3B 0 BANK0 1 cstackBANK0 dist/default/production\Kart_micros.X.production.o
 _CCP1CONbits 17 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
-_PWmanual_func D52 0 CODE 0 text21 dist/default/production\Kart_micros.X.production.o
-_PWmanual_init 1BB4 0 CODE 0 text15 dist/default/production\Kart_micros.X.production.o
+_PWmanual_func DBA 0 CODE 0 text21 dist/default/production\Kart_micros.X.production.o
+_PWmanual_init 1B56 0 CODE 0 text15 dist/default/production\Kart_micros.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -957,29 +952,29 @@ _PWmanual_init 1BB4 0 CODE 0 text15 dist/default/production\Kart_micros.X.produc
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-text1 0 E17 1C2E 13 2
-text3 0 E2A 1C54 14 2
-text4 0 E8B 1D16 27 2
+text1 0 DDA 1BB4 13 2
+text3 0 DED 1BDA 14 2
+text4 0 E4E 1C9C 27 2
+text5 0 EDF 1DBE 40 2
 text6 0 F1F 1E3E 46 2
-text7 0 EE7 1DCE 38 2
-text8 0 E54 1CA8 17 2
-text9 0 EB2 1D64 35 2
-text10 0 E09 1C12 E 2
-text13 0 DFB 1BF6 E 2
-text14 0 DE4 1BC8 A 2
-text15 0 DDA 1BB4 A 2
+text7 0 EAA 1D54 35 2
+text8 0 E17 1C2E 17 2
+text9 0 E75 1CEA 35 2
+text13 0 DCC 1B98 E 2
+text14 0 DB5 1B6A A 2
+text15 0 DAB 1B56 A 2
 text16 0 F65 1ECA 4B 2
-text19 0 E6B 1CD6 20 2
-text20 0 DEE 1BDC D 2
+text19 0 E2E 1C5C 20 2
+text20 0 DBF 1B7E D 2
 text24 0 FB0 1F60 50 2
-text25 0 E3E 1C7C 16 2
+text25 0 E01 1C02 16 2
 cstackCOMMON 1 70 70 E 1
 cstackBANK0 1 20 20 39 1
-cstackBANK1 1 A0 A0 23 1
-intentry 0 4 8 7FA 2
+cstackBANK1 1 A0 A0 27 1
+intentry 0 4 8 7FC 2
 reset_vec 0 0 0 3 2
 strings 0 800 1000 47 2
-clrtext 0 DD2 1BA4 8 2
+clrtext 0 DA3 1B46 8 2
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal

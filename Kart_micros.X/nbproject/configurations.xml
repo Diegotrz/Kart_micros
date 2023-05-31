@@ -19,6 +19,7 @@
       <itemPath>USARTmodl.h</itemPath>
       <itemPath>PWmanual.c</itemPath>
       <itemPath>PWmanual.h</itemPath>
+      <itemPath>Kartprueba.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -149,6 +150,8 @@
         <property key="program-the-device-with-default-config-words" value="true"/>
         <property key="remove-unused-sections" value="true"/>
       </HI-TECH-LINK>
+      <item path="Kartprueba.c" ex="true" overriding="false">
+      </item>
       <XC8-CO>
         <property key="coverage-enable" value=""/>
         <property key="stack-guidance" value="false"/>
