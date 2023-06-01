@@ -49,7 +49,7 @@ bssBANK1 BANK1 1 C1 C1 6 1 1
 strings STRING 0 800 800 47 2 1
 clrtext CODE 0 DA3 DA3 8 2 1
 config CONFIG 4 2007 2007 2 2 1
-$C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
+$C:\Users\Diego\AppData\Local\Temp\xcAs4u4.o
 idloc IDLOC 5 2000 2000 4 2 1
 reset_vec CODE 0 0 0 3 2 1
 end_init CODE 0 E E 3 2 1
@@ -102,24 +102,24 @@ STRING 1000-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Kart_micros.X.production.o
-11 cinit CODE >1126:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-11 cinit CODE >1129:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-11 cinit CODE >1194:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-12 cinit CODE >1195:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-13 cinit CODE >1196:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-14 cinit CODE >1197:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-15 cinit CODE >1198:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-1A cinit CODE >1201:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-1B cinit CODE >1202:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-1C cinit CODE >1203:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-1D cinit CODE >1204:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-1E cinit CODE >1205:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-1F cinit CODE >1206:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-20 cinit CODE >1207:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-21 cinit CODE >1208:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-22 cinit CODE >1214:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-22 cinit CODE >1216:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-23 cinit CODE >1217:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+11 cinit CODE >1126:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+11 cinit CODE >1129:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+11 cinit CODE >1194:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+12 cinit CODE >1195:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+13 cinit CODE >1196:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+14 cinit CODE >1197:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+15 cinit CODE >1198:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+1A cinit CODE >1201:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+1B cinit CODE >1202:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+1C cinit CODE >1203:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+1D cinit CODE >1204:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+1E cinit CODE >1205:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+1F cinit CODE >1206:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+20 cinit CODE >1207:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+21 cinit CODE >1208:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+22 cinit CODE >1214:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+22 cinit CODE >1216:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+23 cinit CODE >1217:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
 4 intentry CODE >87:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
 E01 text25 CODE >46:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
 E01 text25 CODE >47:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\PWM.c
@@ -607,16 +607,16 @@ DEC text1 CODE >159:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
 315 maintext CODE >228:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
 31E maintext CODE >230:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
 326 maintext CODE >231:C:\Users\Diego\Videos\Kart_micros\Kart_micros.X\Kart_main.c
-DA3 clrtext CODE >1181:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-DA3 clrtext CODE >1182:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-DA4 clrtext CODE >1183:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-DA4 clrtext CODE >1184:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-DA5 clrtext CODE >1185:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-DA6 clrtext CODE >1186:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-DA7 clrtext CODE >1187:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-DA8 clrtext CODE >1188:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-DA9 clrtext CODE >1189:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
-DAA clrtext CODE >1190:C:\Users\Diego\AppData\Local\Temp\xcAscr8.s
+DA3 clrtext CODE >1181:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+DA3 clrtext CODE >1182:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+DA4 clrtext CODE >1183:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+DA4 clrtext CODE >1184:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+DA5 clrtext CODE >1185:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+DA6 clrtext CODE >1186:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+DA7 clrtext CODE >1187:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+DA8 clrtext CODE >1188:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+DA9 clrtext CODE >1189:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
+DAA clrtext CODE >1190:C:\Users\Diego\AppData\Local\Temp\xcAs4u4.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -646,20 +646,20 @@ _OERR C1 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 _RCIF 65 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 _TRMT 4C1 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 _WPUB 95 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
+___sp 0 0 STACK 2 stack C:\Users\Diego\AppData\Local\Temp\xcAs4u4.o
 _main 394 0 CODE 0 maintext dist/default/production\Kart_micros.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
-start 1C 0 CODE 0 init C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
+start 1C 0 CODE 0 init C:\Users\Diego\AppData\Local\Temp\xcAs4u4.o
 ?___wmul 37 0 BANK0 1 cstackBANK0 dist/default/production\Kart_micros.X.production.o
 _OPTION_REGbits 81 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
 PWM_init@periodo_ms A6 0 BANK1 1 cstackBANK1 dist/default/production\Kart_micros.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Diego\AppData\Local\Temp\xcAs4u4.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Diego\AppData\Local\Temp\xcAs4u4.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Diego\AppData\Local\Temp\xcAs4u4.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Diego\AppData\Local\Temp\xcAs4u4.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Diego\AppData\Local\Temp\xcAs4u4.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Diego\AppData\Local\Temp\xcAs4u4.o
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 _UART_Print 1CEA 0 CODE 0 text9 dist/default/production\Kart_micros.X.production.o
@@ -688,8 +688,8 @@ __end_of___lwmod 1E3E 0 CODE 0 text5 dist/default/production\Kart_micros.X.produ
 _INTCON B 0 ABS 0 - dist/default/production\Kart_micros.X.production.o
 __end_of_PWmanual_func ED0 0 CODE 0 text21 dist/default/production\Kart_micros.X.production.o
 __end_of_PWmanual_init 1B6A 0 CODE 0 text15 dist/default/production\Kart_micros.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
-___stacklo 0 0 ABS 0 - C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
+___stackhi 0 0 ABS 0 - C:\Users\Diego\AppData\Local\Temp\xcAs4u4.o
+___stacklo 0 0 ABS 0 - C:\Users\Diego\AppData\Local\Temp\xcAs4u4.o
 _dpowers 1020 0 STRING 0 strings dist/default/production\Kart_micros.X.production.o
 __end_of_UART_Print 1D54 0 CODE 0 text9 dist/default/production\Kart_micros.X.production.o
 ___lwdiv@quotient 3D 0 BANK0 1 cstackBANK0 dist/default/production\Kart_micros.X.production.o
@@ -703,7 +703,7 @@ ___lldiv@dividend 3B 0 BANK0 1 cstackBANK0 dist/default/production\Kart_micros.X
 clear_ram0 1B46 0 CODE 0 clrtext dist/default/production\Kart_micros.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\Kart_micros.X.production.o
 __pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/production\Kart_micros.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
+___int_sp 0 0 STACK 2 stack C:\Users\Diego\AppData\Local\Temp\xcAs4u4.o
 _readEEPROM 1B7E 0 CODE 0 text20 dist/default/production\Kart_micros.X.production.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
@@ -778,7 +778,7 @@ writeEEPROM@dataEE 70 0 COMMON 1 cstackCOMMON dist/default/production\Kart_micro
 __Lintentry 8 0 CODE 0 intentry -
 ___lldiv@divisor 37 0 BANK0 1 cstackBANK0 dist/default/production\Kart_micros.X.production.o
 __stringtab 1000 0 STRING 0 strings dist/default/production\Kart_micros.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Diego\AppData\Local\Temp\xcAscr8.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Diego\AppData\Local\Temp\xcAs4u4.o
 __end_of___xxtofl B56 0 CODE 0 text22 dist/default/production\Kart_micros.X.production.o
 readEEPROM@address 70 0 COMMON 1 cstackCOMMON dist/default/production\Kart_micros.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
